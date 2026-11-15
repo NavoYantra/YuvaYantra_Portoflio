@@ -1,69 +1,134 @@
-import Image from "next/image";
+"use client";
 
-export default function Home() {
+import React, { useState } from "react";
+import Link from "next/link";
+import { ArrowRight, Check, MessageSquare } from "lucide-react";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+import { QuoteModal } from "@/components/layout/QuoteModal";
+import { HeroImageSlider } from "@/components/home/HeroImageSlider";
+import { StatsCounter } from "@/components/home/StatsCounter";
+import { WhatWeDo } from "@/components/home/WhatWeDo";
+import { TechAreas } from "@/components/home/TechAreas";
+import { LabSolutions } from "@/components/home/LabSolutions";
+import { StemKits } from "@/components/home/StemKits";
+import { HowWeWork } from "@/components/home/HowWeWork";
+import { ProjectsPreview } from "@/components/home/ProjectsPreview";
+import { WhyChooseUs } from "@/components/home/WhyChooseUs";
+import { CtaBanner } from "@/components/common/CtaBanner";
+import { SmoothScroll } from "@/components/layout/SmoothScroll";
+import { COMPANY_INFO } from "@/data/websiteData";
+
+export default function HomePage() {
+  const [isQuoteOpen, setIsQuoteOpen] = useState(false);
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+    <SmoothScroll>
+      <div className="min-h-screen flex flex-col bg-white">
+        <Navbar />
+
+        <main className="flex-1">
+          {/* HERO SECTION (Navy Blue Background - Exact Design) */}
+          <section className="relative w-full bg-[#0B1E38] text-white pt-12 pb-24 lg:pt-16 lg:pb-28 overflow-hidden">
+            {/* Subtle Grid / Circuit Background */}
+            <div className="absolute inset-0 bg-[radial-gradient(#1E3A5F_1px,transparent_1px)] [background-size:24px_24px] opacity-40 pointer-events-none" />
+
+            <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-8">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                {/* Left Column: Headline & Value Prop */}
+                <div className="lg:col-span-7 space-y-6">
+                  {/* Tagline */}
+                  <div className="inline-block">
+                    <span className="text-[11px] sm:text-xs font-bold tracking-[0.2em] uppercase text-[#FF7043] bg-white/5 border border-white/10 px-3 py-1 rounded-full">
+                      {COMPANY_INFO.tagline}
+                    </span>
+                  </div>
+
+                  {/* Main Headline */}
+                  <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.12]">
+                    Indigenous <br />
+                    technology for <br />
+                    <span className="text-[#FF5722]">classrooms</span> <br className="sm:hidden" />
+                    and <span className="text-[#FF5722]">industry</span>
+                  </h1>
+
+                  {/* Subheadline */}
+                  <p className="text-slate-300 text-base sm:text-lg max-w-xl leading-relaxed">
+                    {COMPANY_INFO.subheadline}
+                  </p>
+
+                  {/* CTAs */}
+                  <div className="flex flex-wrap items-center gap-4 pt-2">
+                    <Link
+                      href="/solutions"
+                      className="px-6 py-3.5 bg-[#FF5722] hover:bg-[#E64A19] text-white font-bold text-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-150 flex items-center gap-2 group cursor-pointer"
+                    >
+                      <span>Explore Lab Solutions</span>
+                      <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+
+                    <button
+                      onClick={() => setIsQuoteOpen(true)}
+                      className="px-6 py-3.5 bg-[#0F2748] hover:bg-[#14325C] border border-[#1E3A5F] text-white font-semibold text-sm rounded-xl transition duration-150 flex items-center gap-2 cursor-pointer"
+                    >
+                      <MessageSquare className="w-4 h-4 text-[#FF7043]" />
+                      <span>Talk to Us</span>
+                    </button>
+                  </div>
+
+                  {/* Trust Badges (Exact pills from design) */}
+                  <div className="pt-4 flex flex-wrap items-center gap-2.5">
+                    {COMPANY_INFO.recognitions.map((item, idx) => (
+                      <div
+                        key={idx}
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#0F2748]/90 border border-[#1E3A5F] text-xs font-medium text-slate-200 shadow-sm"
+                      >
+                        <Check className="w-3.5 h-3.5 text-emerald-400 stroke-[3]" />
+                        <span>{item.title}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Right Column: Hero Real Image Carousel Slider */}
+                <div className="lg:col-span-5">
+                  <HeroImageSlider />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Stats Bar */}
+          <StatsCounter />
+
+          {/* What We Do (NavoYantra Education vs YuvaYantra Industry) */}
+          <WhatWeDo />
+
+          {/* Deep Tech Built in India */}
+          <TechAreas />
+
+          {/* Lab Solutions Turnkey */}
+          <LabSolutions />
+
+          {/* 15 STEM Kits Across Four Tracks + YuvaBot v1.0 */}
+          <StemKits />
+
+          {/* Seven Steps to a Working Lab */}
+          <HowWeWork />
+
+          {/* Projects: Work We Are Proud Of */}
+          <ProjectsPreview />
+
+          {/* Six Reasons Schools and Industry Choose Us */}
+          <WhyChooseUs />
+
+          {/* Bottom Orange Consultation Banner */}
+          <CtaBanner />
+        </main>
+
+        <Footer />
+        <QuoteModal isOpen={isQuoteOpen} onClose={() => setIsQuoteOpen(false)} />
+      </div>
+    </SmoothScroll>
   );
 }
