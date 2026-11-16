@@ -60,15 +60,15 @@ export default function EnquiryReceivedPage() {
             {/* 3 Quick Link Cards */}
             <div className="pt-12 grid grid-cols-1 sm:grid-cols-3 gap-4 text-left">
               <Link
-                href="/projects"
+                href="/gallery"
                 className="p-5 rounded-2xl border border-slate-200 bg-white hover:border-[#FF5722] hover:shadow-md transition-all group"
               >
                 <FolderKanban className="w-5 h-5 text-[#FF5722] mb-3 group-hover:scale-110 transition-transform" />
                 <h4 className="text-sm font-bold text-[#0B2545] group-hover:text-[#FF5722] transition-colors">
-                  See our projects
+                  View Photo Gallery
                 </h4>
                 <p className="text-xs text-slate-500 mt-1">
-                  Labs and products we have delivered
+                  Photos from our labs and workshops
                 </p>
               </Link>
 

@@ -330,10 +330,10 @@ export default function IndustryPage() {
 
                 <div className="pt-8">
                   <Link
-                    href="/projects"
+                    href="/gallery"
                     className="inline-flex items-center gap-2 px-6 py-3 bg-[#FF5722] hover:bg-[#E64A19] text-white font-bold text-sm rounded-xl transition"
                   >
-                    <span>See Our Projects</span>
+                    <span>View Photo Gallery</span>
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>

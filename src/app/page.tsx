@@ -13,7 +13,6 @@ import { TechAreas } from "@/components/home/TechAreas";
 import { LabSolutions } from "@/components/home/LabSolutions";
 import { StemKits } from "@/components/home/StemKits";
 import { HowWeWork } from "@/components/home/HowWeWork";
-import { ProjectsPreview } from "@/components/home/ProjectsPreview";
 import { WhyChooseUs } from "@/components/home/WhyChooseUs";
 import { CtaBanner } from "@/components/common/CtaBanner";
 import { SmoothScroll } from "@/components/layout/SmoothScroll";
@@ -115,9 +114,6 @@ export default function HomePage() {
 
           {/* Seven Steps to a Working Lab */}
           <HowWeWork />
-
-          {/* Projects: Work We Are Proud Of */}
-          <ProjectsPreview />
 
           {/* Six Reasons Schools and Industry Choose Us */}
           <WhyChooseUs />
