@@ -11,10 +11,10 @@ export const LabSolutions: React.FC = () => {
         {/* Header row */}
         <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-12">
           <div className="space-y-2 max-w-2xl">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722]">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E]">
               LAB SOLUTIONS
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B2545] tracking-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#153A6B] tracking-tight">
               Turnkey labs, from <br className="hidden sm:inline" />
               design to training
             </h2>
@@ -27,7 +27,7 @@ export const LabSolutions: React.FC = () => {
           <div>
             <Link
               href="/solutions"
-              className="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#0B2545] text-[#0B2545] hover:bg-[#0B2545] hover:text-white font-bold text-sm rounded-xl transition-all duration-150 cursor-pointer"
+              className="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#153A6B] text-[#153A6B] hover:bg-[#153A6B] hover:text-white font-bold text-sm rounded-xl transition-all duration-150 cursor-pointer"
             >
               <span>View All Labs</span>
               <ArrowRight className="w-4 h-4" />
@@ -40,11 +40,11 @@ export const LabSolutions: React.FC = () => {
           {/* Left Feature Showcase */}
           <div className="lg:col-span-5 rounded-3xl border border-slate-200 bg-gradient-to-br from-slate-50 to-orange-50/30 p-8 flex flex-col justify-between overflow-hidden shadow-sm">
             <div className="space-y-4">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FF5722]/10 text-[#FF5722] text-xs font-bold">
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FF6F1E]/10 text-[#FF6F1E] text-xs font-bold">
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>Featured Government Installation</span>
               </div>
-              <h3 className="text-2xl font-black text-[#0B2545]">
+              <h3 className="text-2xl font-black text-[#153A6B]">
                 IoT Labs in Government Schools
               </h3>
               <p className="text-sm text-slate-600 leading-relaxed">
@@ -69,7 +69,7 @@ export const LabSolutions: React.FC = () => {
 
             <div className="text-xs text-slate-500 flex items-center justify-between">
               <span>Turnkey setup completed in 3 weeks</span>
-              <span className="font-semibold text-[#FF5722]">10 Schools Equipped</span>
+              <span className="font-semibold text-[#FF6F1E]">10 Schools Equipped</span>
             </div>
           </div>
 
@@ -79,17 +79,17 @@ export const LabSolutions: React.FC = () => {
               <Link
                 key={lab.id}
                 href={`/solutions#${lab.id}`}
-                className="group p-5 bg-white rounded-2xl border border-slate-200 hover:border-[#FF5722] hover:shadow-md transition-all duration-200 flex items-center justify-between"
+                className="group p-5 bg-white rounded-2xl border border-slate-200 hover:border-[#FF6F1E] hover:shadow-md transition-all duration-200 flex items-center justify-between"
               >
                 <div>
-                  <h4 className="text-base font-bold text-[#0B2545] group-hover:text-[#FF5722] transition-colors">
+                  <h4 className="text-base font-bold text-[#153A6B] group-hover:text-[#FF6F1E] transition-colors">
                     {lab.title}
                   </h4>
                   <p className="text-xs text-slate-500 mt-1 line-clamp-1">
                     {lab.shortDesc}
                   </p>
                 </div>
-                <div className="w-8 h-8 rounded-full bg-slate-100 group-hover:bg-[#FF5722] group-hover:text-white text-slate-400 flex items-center justify-center shrink-0 ml-3 transition-colors">
+                <div className="w-8 h-8 rounded-full bg-slate-100 group-hover:bg-[#FF6F1E] group-hover:text-white text-slate-400 flex items-center justify-center shrink-0 ml-3 transition-colors">
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
                 </div>
               </Link>

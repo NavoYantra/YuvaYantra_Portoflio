@@ -119,7 +119,7 @@ export const HeroImageSlider: React.FC = () => {
     <div
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
-      className="relative w-full h-[440px] sm:h-[480px] lg:h-[510px] rounded-3xl overflow-hidden border border-[#1E3A5F] bg-[#0A1A2F] shadow-2xl group select-none"
+      className="relative w-full h-[440px] sm:h-[480px] lg:h-[510px] rounded-3xl overflow-hidden border border-[#20487E] bg-[#0A1A2F] shadow-2xl group select-none"
     >
       {/* Background Slides with AnimatePresence */}
       <AnimatePresence mode="wait">
@@ -141,16 +141,16 @@ export const HeroImageSlider: React.FC = () => {
           />
 
           {/* Gradient overlays for readability and high-tech feel */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#0B1E38] via-[#0B1E38]/40 to-black/30" />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#0B1E38]/60 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-[#102A4E] via-[#102A4E]/40 to-black/30" />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#102A4E]/60 via-transparent to-transparent" />
         </motion.div>
       </AnimatePresence>
 
       {/* Top Bar: Tag & Slide Counter & Pause/Play */}
       <div className="absolute top-4 left-4 right-4 z-20 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0B1E38]/85 backdrop-blur-md border border-white/15 text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#FF7043] shadow">
-            <Sparkles className="w-3 h-3 text-[#FF5722]" />
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#102A4E]/85 backdrop-blur-md border border-white/15 text-[10px] sm:text-xs font-bold uppercase tracking-wider text-[#FF8742] shadow">
+            <Sparkles className="w-3 h-3 text-[#FF6F1E]" />
             <span>{active.tag}</span>
           </span>
           <span className="px-2.5 py-1 rounded-full bg-white/10 backdrop-blur-md text-[10px] font-bold text-white/90 border border-white/10">
@@ -177,7 +177,7 @@ export const HeroImageSlider: React.FC = () => {
         <button
           onClick={prevSlide}
           aria-label="Previous slide"
-          className="w-10 h-10 rounded-full bg-black/40 hover:bg-[#FF5722] backdrop-blur-md text-white flex items-center justify-center transition-all duration-150 border border-white/15 hover:border-[#FF5722] hover:scale-110 cursor-pointer shadow-lg"
+          className="w-10 h-10 rounded-full bg-black/40 hover:bg-[#FF6F1E] backdrop-blur-md text-white flex items-center justify-center transition-all duration-150 border border-white/15 hover:border-[#FF6F1E] hover:scale-110 cursor-pointer shadow-lg"
         >
           <ChevronLeft className="w-5 h-5" />
         </button>
@@ -187,7 +187,7 @@ export const HeroImageSlider: React.FC = () => {
         <button
           onClick={nextSlide}
           aria-label="Next slide"
-          className="w-10 h-10 rounded-full bg-black/40 hover:bg-[#FF5722] backdrop-blur-md text-white flex items-center justify-center transition-all duration-150 border border-white/15 hover:border-[#FF5722] hover:scale-110 cursor-pointer shadow-lg"
+          className="w-10 h-10 rounded-full bg-black/40 hover:bg-[#FF6F1E] backdrop-blur-md text-white flex items-center justify-center transition-all duration-150 border border-white/15 hover:border-[#FF6F1E] hover:scale-110 cursor-pointer shadow-lg"
         >
           <ChevronRight className="w-5 h-5" />
         </button>
@@ -196,7 +196,7 @@ export const HeroImageSlider: React.FC = () => {
       {/* Bottom Content Card & Indicators */}
       <div className="absolute bottom-4 left-4 right-4 z-20 space-y-3">
         {/* Caption Box */}
-        <div className="p-4 sm:p-5 rounded-2xl bg-[#0B1E38]/90 backdrop-blur-md border border-white/15 shadow-xl">
+        <div className="p-4 sm:p-5 rounded-2xl bg-[#102A4E]/90 backdrop-blur-md border border-white/15 shadow-xl">
           <motion.div
             key={active.id + "-content"}
             initial={{ opacity: 0, y: 10 }}
@@ -222,7 +222,7 @@ export const HeroImageSlider: React.FC = () => {
               aria-label={`Go to slide ${idx + 1}`}
               className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
                 current === idx
-                  ? "w-8 bg-[#FF5722]"
+                  ? "w-8 bg-[#FF6F1E]"
                   : "w-2 bg-white/30 hover:bg-white/60"
               }`}
             />

@@ -8,15 +8,15 @@ export const ProjectsPreview: React.FC = () => {
   const getCategoryIcon = (category: string) => {
     switch (category) {
       case "Government Tender":
-        return <Building2 className="w-5 h-5 text-[#FF5722]" />;
+        return <Building2 className="w-5 h-5 text-[#FF6F1E]" />;
       case "Industry":
-        return <Wrench className="w-5 h-5 text-[#0B2545]" />;
+        return <Wrench className="w-5 h-5 text-[#153A6B]" />;
       case "Collaboration":
         return <Handshake className="w-5 h-5 text-[#0284C7]" />;
       case "Education":
         return <GraduationCap className="w-5 h-5 text-[#16A34A]" />;
       default:
-        return <Building2 className="w-5 h-5 text-[#FF5722]" />;
+        return <Building2 className="w-5 h-5 text-[#FF6F1E]" />;
     }
   };
 
@@ -26,10 +26,10 @@ export const ProjectsPreview: React.FC = () => {
         {/* Header */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-12">
           <div className="space-y-2">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722]">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E]">
               PROJECTS
             </span>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B2545] tracking-tight">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#153A6B] tracking-tight">
               Work we are proud of
             </h2>
           </div>
@@ -37,7 +37,7 @@ export const ProjectsPreview: React.FC = () => {
           <div>
             <Link
               href="/projects"
-              className="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#0B2545] text-[#0B2545] hover:bg-[#0B2545] hover:text-white font-bold text-sm rounded-xl transition duration-150 cursor-pointer"
+              className="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#153A6B] text-[#153A6B] hover:bg-[#153A6B] hover:text-white font-bold text-sm rounded-xl transition duration-150 cursor-pointer"
             >
               <span>View All Projects</span>
               <ArrowRight className="w-4 h-4" />
@@ -50,7 +50,7 @@ export const ProjectsPreview: React.FC = () => {
           {PROJECTS_DATA.map((proj) => (
             <div
               key={proj.id}
-              className="bg-white rounded-2xl border border-slate-200 overflow-hidden p-6 flex flex-col justify-between hover:border-[#FF5722] hover:shadow-lg transition-all duration-200 group"
+              className="bg-white rounded-2xl border border-slate-200 overflow-hidden p-6 flex flex-col justify-between hover:border-[#FF6F1E] hover:shadow-lg transition-all duration-200 group"
             >
               <div>
                 {/* Visual Image box */}
@@ -66,11 +66,11 @@ export const ProjectsPreview: React.FC = () => {
                   </div>
                 </div>
 
-                <span className="text-[11px] font-bold tracking-wider uppercase text-[#FF5722]">
+                <span className="text-[11px] font-bold tracking-wider uppercase text-[#FF6F1E]">
                   {proj.category}
                 </span>
 
-                <h3 className="text-lg font-bold text-[#0B2545] mt-1 mb-2 group-hover:text-[#FF5722] transition-colors">
+                <h3 className="text-lg font-bold text-[#153A6B] mt-1 mb-2 group-hover:text-[#FF6F1E] transition-colors">
                   {proj.title}
                 </h3>
 
@@ -82,7 +82,7 @@ export const ProjectsPreview: React.FC = () => {
               <div className="pt-4 border-t border-slate-100 mt-5">
                 <Link
                   href={`/projects#${proj.id}`}
-                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0B2545] group-hover:text-[#FF5722] group-hover:translate-x-1 transition-all"
+                  className="inline-flex items-center gap-1.5 text-xs font-bold text-[#153A6B] group-hover:text-[#FF6F1E] group-hover:translate-x-1 transition-all"
                 >
                   <span>Case details</span>
                   <ArrowRight className="w-3.5 h-3.5" />

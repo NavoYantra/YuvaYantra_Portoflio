@@ -19,15 +19,15 @@ export default function PrivacyPolicyPage() {
 
         <main className="flex-1">
           {/* Header Banner */}
-          <section className="bg-[#0B1E38] text-white py-14 sm:py-18 px-4 sm:px-8 relative overflow-hidden">
+          <section className="bg-[#102A4E] text-white py-14 sm:py-18 px-4 sm:px-8 relative overflow-hidden">
             <div className="max-w-5xl mx-auto space-y-4">
               <div className="text-xs font-semibold text-slate-400">
                 <Link href="/" className="hover:text-white transition">
                   Home
                 </Link>{" "}
-                / <span className="text-[#FF7043]">Legal</span> / <span>Privacy Policy</span>
+                / <span className="text-[#FF8742]">Legal</span> / <span>Privacy Policy</span>
               </div>
-              <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722] block">
+              <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E] block">
                 COMPLIANCE &amp; DATA PROTECTION
               </span>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white leading-tight">
@@ -48,23 +48,23 @@ export default function PrivacyPolicyPage() {
             <div className="max-w-4xl mx-auto space-y-12 text-slate-700 leading-relaxed text-sm sm:text-base">
               
               {/* Highlight Box: Strict Data Confidentiality Pledge */}
-              <div className="rounded-2xl border-2 border-[#FF5722]/30 bg-orange-50/50 p-6 sm:p-8 space-y-4">
-                <div className="flex items-center gap-3 text-[#FF5722]">
+              <div className="rounded-2xl border-2 border-[#FF6F1E]/30 bg-orange-50/50 p-6 sm:p-8 space-y-4">
+                <div className="flex items-center gap-3 text-[#FF6F1E]">
                   <ShieldCheck className="w-7 h-7 shrink-0" />
-                  <h2 className="text-lg sm:text-xl font-bold text-[#0B2545]">
+                  <h2 className="text-lg sm:text-xl font-bold text-[#153A6B]">
                     Strict Customer Data Confidentiality Guarantee
                   </h2>
                 </div>
                 <p className="text-slate-800 font-medium leading-relaxed">
                   <strong>YuvaYantra Technology Private Limited</strong> collects client and customer
                   inquiries strictly through direct email communications (
-                  <a href={`mailto:${COMPANY_INFO.emailOfficial}`} className="text-[#FF5722] underline">
+                  <a href={`mailto:${COMPANY_INFO.emailOfficial}`} className="text-[#FF6F1E] underline">
                     {COMPANY_INFO.emailOfficial}
                   </a>
                   ) and our official website forms.
                 </p>
                 <div className="p-4 rounded-xl bg-white border border-orange-200 text-xs sm:text-sm text-slate-700 space-y-2">
-                  <p className="font-bold text-[#0B2545]">Our Uncompromising Commitment:</p>
+                  <p className="font-bold text-[#153A6B]">Our Uncompromising Commitment:</p>
                   <ul className="space-y-1.5 list-disc list-inside">
                     <li>Your submitted data remains exclusively within our secure, encrypted corporate environment.</li>
                     <li><strong>We DO NOT sell, rent, trade, lease, or share your personal, institutional, or contact data with any third-party marketing agencies, advertisers, or external brokers under any circumstances.</strong></li>
@@ -75,7 +75,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Section 1: Corporate Entity Information */}
               <div className="space-y-4 border-b border-slate-100 pb-8">
-                <h3 className="text-xl font-black text-[#0B2545]">1. Corporate Identity &amp; Data Fiduciary</h3>
+                <h3 className="text-xl font-black text-[#153A6B]">1. Corporate Identity &amp; Data Fiduciary</h3>
                 <p>
                   This Privacy Policy applies to <strong>{COMPANY_INFO.legalName}</strong> (hereinafter referred to as &ldquo;YuvaYantra&rdquo;, &ldquo;we&rdquo;, &ldquo;our&rdquo;, or &ldquo;us&rdquo;), including our educational division <strong>{COMPANY_INFO.educationBrand}</strong>. Under the <strong>Digital Personal Data Protection Act, 2023 (DPDP Act, 2023)</strong>, YuvaYantra operates as the Data Fiduciary for all personal data collected through this website (<code>yuvayantra.com</code>) and its sub-domains.
                 </p>
@@ -90,23 +90,23 @@ export default function PrivacyPolicyPage() {
 
               {/* Section 2: Data We Collect */}
               <div className="space-y-4 border-b border-slate-100 pb-8">
-                <h3 className="text-xl font-black text-[#0B2545]">2. Personal Data We Collect</h3>
+                <h3 className="text-xl font-black text-[#153A6B]">2. Personal Data We Collect</h3>
                 <p>We believe in strict data minimization. We only collect the minimal personal information voluntarily provided by you when requesting a quotation, booking a lab consultation, ordering STEM kits, or applying for job openings:</p>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm pt-2">
                   <li className="p-3 rounded-xl bg-slate-50 border border-slate-200">
-                    <strong className="text-[#0B2545] block">Contact Details:</strong>
+                    <strong className="text-[#153A6B] block">Contact Details:</strong>
                     Name, email address, contact phone number / WhatsApp number.
                   </li>
                   <li className="p-3 rounded-xl bg-slate-50 border border-slate-200">
-                    <strong className="text-[#0B2545] block">Institutional Details:</strong>
+                    <strong className="text-[#153A6B] block">Institutional Details:</strong>
                     School name, college, university, company name, and designation.
                   </li>
                   <li className="p-3 rounded-xl bg-slate-50 border border-slate-200">
-                    <strong className="text-[#0B2545] block">Project Requirements:</strong>
+                    <strong className="text-[#153A6B] block">Project Requirements:</strong>
                     Lab type, kit quantities, automation specifications, and messages.
                   </li>
                   <li className="p-3 rounded-xl bg-slate-50 border border-slate-200">
-                    <strong className="text-[#0B2545] block">Career Applications:</strong>
+                    <strong className="text-[#153A6B] block">Career Applications:</strong>
                     Resume / CV, educational qualifications, and portfolio links.
                   </li>
                 </ul>
@@ -114,7 +114,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Section 3: Legal Basis & Purpose */}
               <div className="space-y-4 border-b border-slate-100 pb-8">
-                <h3 className="text-xl font-black text-[#0B2545]">3. Purpose of Processing &amp; Lawful Basis</h3>
+                <h3 className="text-xl font-black text-[#153A6B]">3. Purpose of Processing &amp; Lawful Basis</h3>
                 <p>Under Section 4 and Section 6 of the DPDP Act 2023, data is processed lawfully based on your explicit consent and legitimate use for:</p>
                 <ol className="list-decimal list-inside space-y-2 text-sm">
                   <li><strong>Responding to Enquiries:</strong> Answering queries about STEM kits, lab setups, robotics workshops, and industrial automation.</li>
@@ -126,24 +126,24 @@ export default function PrivacyPolicyPage() {
 
               {/* Section 4: Data Storage, Retention & Security */}
               <div className="space-y-4 border-b border-slate-100 pb-8">
-                <h3 className="text-xl font-black text-[#0B2545]">4. Security Standards &amp; Data Storage</h3>
+                <h3 className="text-xl font-black text-[#153A6B]">4. Security Standards &amp; Data Storage</h3>
                 <p>
                   In accordance with Section 43A of the Information Technology Act, 2000 and the <em>IT (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011</em>:
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-2">
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5">
-                    <Lock className="w-5 h-5 text-[#FF5722]" />
-                    <h4 className="text-xs font-bold text-[#0B2545] uppercase">Encryption</h4>
+                    <Lock className="w-5 h-5 text-[#FF6F1E]" />
+                    <h4 className="text-xs font-bold text-[#153A6B] uppercase">Encryption</h4>
                     <p className="text-xs text-slate-600">All data transmissions are protected via industry-standard SSL/TLS 256-bit encryption.</p>
                   </div>
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5">
-                    <ShieldCheck className="w-5 h-5 text-[#FF5722]" />
-                    <h4 className="text-xs font-bold text-[#0B2545] uppercase">Access Controls</h4>
+                    <ShieldCheck className="w-5 h-5 text-[#FF6F1E]" />
+                    <h4 className="text-xs font-bold text-[#153A6B] uppercase">Access Controls</h4>
                     <p className="text-xs text-slate-600">Only authorized directors and core engineers have controlled access to project files.</p>
                   </div>
                   <div className="p-4 rounded-xl bg-slate-50 border border-slate-200 space-y-1.5">
-                    <FileText className="w-5 h-5 text-[#FF5722]" />
-                    <h4 className="text-xs font-bold text-[#0B2545] uppercase">India-Based Retention</h4>
+                    <FileText className="w-5 h-5 text-[#FF6F1E]" />
+                    <h4 className="text-xs font-bold text-[#153A6B] uppercase">India-Based Retention</h4>
                     <p className="text-xs text-slate-600">Customer records are retained in compliance with Indian commercial law and discarded securely.</p>
                   </div>
                 </div>
@@ -151,7 +151,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Section 5: Rights of Data Principals */}
               <div className="space-y-4 border-b border-slate-100 pb-8">
-                <h3 className="text-xl font-black text-[#0B2545]">5. Your Rights as a Data Principal (DPDP Act 2023)</h3>
+                <h3 className="text-xl font-black text-[#153A6B]">5. Your Rights as a Data Principal (DPDP Act 2023)</h3>
                 <p>Under the DPDP Act 2023, you hold the following statutory rights regarding your personal data:</p>
                 <div className="space-y-2 text-sm">
                   <p><strong>Right to Access:</strong> You may request a summary of personal data held by YuvaYantra.</p>
@@ -163,7 +163,7 @@ export default function PrivacyPolicyPage() {
 
               {/* Section 6: Grievance Officer Details */}
               <div className="space-y-4 rounded-2xl bg-slate-50 border border-slate-200 p-6 sm:p-8">
-                <h3 className="text-lg sm:text-xl font-bold text-[#0B2545]">
+                <h3 className="text-lg sm:text-xl font-bold text-[#153A6B]">
                   6. Statutory Grievance Redressal Officer
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600">
@@ -174,8 +174,8 @@ export default function PrivacyPolicyPage() {
                   <p><strong>Designation:</strong> Director &amp; Grievance Officer</p>
                   <p><strong>Company:</strong> {COMPANY_INFO.legalName}</p>
                   <p><strong>Address:</strong> {COMPANY_INFO.address}</p>
-                  <p><strong>Direct Email:</strong> <a href={`mailto:${COMPANY_INFO.emailFounder}`} className="text-[#FF5722] underline">{COMPANY_INFO.emailFounder}</a></p>
-                  <p><strong>Official Contact:</strong> <a href={`mailto:${COMPANY_INFO.emailOfficial}`} className="text-[#FF5722] underline">{COMPANY_INFO.emailOfficial}</a> | {COMPANY_INFO.phone1}</p>
+                  <p><strong>Direct Email:</strong> <a href={`mailto:${COMPANY_INFO.emailFounder}`} className="text-[#FF6F1E] underline">{COMPANY_INFO.emailFounder}</a></p>
+                  <p><strong>Official Contact:</strong> <a href={`mailto:${COMPANY_INFO.emailOfficial}`} className="text-[#FF6F1E] underline">{COMPANY_INFO.emailOfficial}</a> | {COMPANY_INFO.phone1}</p>
                   <p className="text-slate-500 text-xs pt-1">
                     Acknowledgment within 48 hours; resolution within 30 days of grievance receipt.
                   </p>

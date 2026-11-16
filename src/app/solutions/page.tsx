@@ -67,15 +67,15 @@ export default function SolutionsPage() {
 
         <main className="flex-1">
           {/* Header Banner */}
-          <section className="bg-[#0B1E38] text-white py-16 sm:py-20 px-4 sm:px-8 relative overflow-hidden">
+          <section className="bg-[#102A4E] text-white py-16 sm:py-20 px-4 sm:px-8 relative overflow-hidden">
             <div className="max-w-7xl mx-auto space-y-4">
               <div className="text-xs font-semibold text-slate-400">
                 <Link href="/" className="hover:text-white transition">
                   Home
                 </Link>{" "}
-                / <span className="text-[#FF7043]">Solutions</span>
+                / <span className="text-[#FF8742]">Solutions</span>
               </div>
-              <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722] block">
+              <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E] block">
                 SOLUTIONS
               </span>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white max-w-3xl leading-tight">
@@ -93,10 +93,10 @@ export default function SolutionsPage() {
           <section id="labs" className="py-20 px-4 sm:px-8 bg-white">
             <div className="max-w-7xl mx-auto space-y-12">
               <div className="space-y-2">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722]">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E]">
                   LAB SOLUTIONS
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-black text-[#0B2545] tracking-tight">
+                <h2 className="text-3xl sm:text-4xl font-black text-[#153A6B] tracking-tight">
                   Labs we design and install
                 </h2>
               </div>
@@ -107,7 +107,7 @@ export default function SolutionsPage() {
                   <div
                     key={lab.id}
                     id={lab.id}
-                    className="p-6 rounded-2xl border border-slate-200 bg-white hover:border-[#FF5722] hover:shadow-lg transition-all duration-200 flex flex-col justify-between group"
+                    className="p-6 rounded-2xl border border-slate-200 bg-white hover:border-[#FF6F1E] hover:shadow-lg transition-all duration-200 flex flex-col justify-between group"
                   >
                     <div>
                       {/* Lab Image container */}
@@ -122,7 +122,7 @@ export default function SolutionsPage() {
                           />
                         ) : (
                           <div className="w-full h-full flex flex-col items-center justify-center p-4 text-center">
-                            <Bot className="w-8 h-8 text-slate-400 group-hover:text-[#FF5722] transition-colors mb-2" />
+                            <Bot className="w-8 h-8 text-slate-400 group-hover:text-[#FF6F1E] transition-colors mb-2" />
                             <span className="text-xs font-semibold text-slate-400">
                               {lab.title}
                             </span>
@@ -131,7 +131,7 @@ export default function SolutionsPage() {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60" />
                       </div>
 
-                      <h3 className="text-lg font-bold text-[#0B2545] mb-2 group-hover:text-[#FF5722] transition-colors">
+                      <h3 className="text-lg font-bold text-[#153A6B] mb-2 group-hover:text-[#FF6F1E] transition-colors">
                         {lab.title}
                       </h3>
                       <p className="text-xs text-slate-600 leading-relaxed mb-4">
@@ -142,7 +142,7 @@ export default function SolutionsPage() {
                     <ul className="pt-3 border-t border-slate-100 space-y-1.5 text-[11px] text-slate-500 font-medium">
                       {lab.features.slice(0, 2).map((feat, idx) => (
                         <li key={idx} className="flex items-center gap-1.5">
-                          <Check className="w-3 h-3 text-[#FF5722]" />
+                          <Check className="w-3 h-3 text-[#FF6F1E]" />
                           <span>{feat}</span>
                         </li>
                       ))}
@@ -152,12 +152,12 @@ export default function SolutionsPage() {
               </div>
 
               {/* Download Official Product & Lab Catalog Banner */}
-              <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-orange-50 via-white to-orange-50/50 border-2 border-dashed border-[#FF5722]/30 shadow-sm">
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-6 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-orange-50 via-white to-orange-50/50 border-2 border-dashed border-[#FF6F1E]/30 shadow-sm">
                 <div className="space-y-1 text-center sm:text-left">
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-[#FF5722] block">
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-[#FF6F1E] block">
                     INSTITUTIONAL GUIDE &amp; PRICING
                   </span>
-                  <h3 className="text-xl font-black text-[#0B2545]">
+                  <h3 className="text-xl font-black text-[#153A6B]">
                     Download Official Lab &amp; STEM Kits Catalog (2026 Edition)
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-600 max-w-xl">
@@ -167,7 +167,7 @@ export default function SolutionsPage() {
                 <a
                   href="/catalog.pdf"
                   download="YuvaYantra-Lab-Kits-Catalog.pdf"
-                  className="px-7 py-3.5 bg-[#FF5722] hover:bg-[#E64A19] text-white text-xs sm:text-sm font-bold rounded-xl shadow-md hover:shadow-lg transition flex items-center gap-2 shrink-0 cursor-pointer"
+                  className="px-7 py-3.5 bg-[#FF6F1E] hover:bg-[#F45B0A] text-white text-xs sm:text-sm font-bold rounded-xl shadow-md hover:shadow-lg transition flex items-center gap-2 shrink-0 cursor-pointer"
                 >
                   <FileText className="w-4 h-4" />
                   <span>Download Catalog (PDF)</span>
@@ -175,10 +175,10 @@ export default function SolutionsPage() {
               </div>
 
               {/* Every Lab Includes Dark Banner */}
-              <div className="rounded-3xl bg-[#0B2545] text-white p-8 sm:p-10 shadow-lg">
+              <div className="rounded-3xl bg-[#153A6B] text-white p-8 sm:p-10 shadow-lg">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                   <div className="lg:col-span-5 space-y-2">
-                    <span className="text-xs font-bold uppercase tracking-widest text-[#FF7043]">
+                    <span className="text-xs font-bold uppercase tracking-widest text-[#FF8742]">
                       EVERY LAB INCLUDES
                     </span>
                     <h3 className="text-2xl sm:text-3xl font-extrabold leading-snug">
@@ -188,27 +188,27 @@ export default function SolutionsPage() {
 
                   <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4 text-sm font-medium text-slate-200">
                     <div className="flex items-center gap-2.5">
-                      <Check className="w-4 h-4 text-[#FF5722] shrink-0" />
+                      <Check className="w-4 h-4 text-[#FF6F1E] shrink-0" />
                       <span>Lab layout and furniture design</span>
                     </div>
                     <div className="flex items-center gap-2.5">
-                      <Check className="w-4 h-4 text-[#FF5722] shrink-0" />
+                      <Check className="w-4 h-4 text-[#FF6F1E] shrink-0" />
                       <span>Equipment, kits and tools</span>
                     </div>
                     <div className="flex items-center gap-2.5">
-                      <Check className="w-4 h-4 text-[#FF5722] shrink-0" />
+                      <Check className="w-4 h-4 text-[#FF6F1E] shrink-0" />
                       <span>Installation and testing</span>
                     </div>
                     <div className="flex items-center gap-2.5">
-                      <Check className="w-4 h-4 text-[#FF5722] shrink-0" />
+                      <Check className="w-4 h-4 text-[#FF6F1E] shrink-0" />
                       <span>Curriculum and activity manuals</span>
                     </div>
                     <div className="flex items-center gap-2.5">
-                      <Check className="w-4 h-4 text-[#FF5722] shrink-0" />
+                      <Check className="w-4 h-4 text-[#FF6F1E] shrink-0" />
                       <span>Teacher training</span>
                     </div>
                     <div className="flex items-center gap-2.5">
-                      <Check className="w-4 h-4 text-[#FF5722] shrink-0" />
+                      <Check className="w-4 h-4 text-[#FF6F1E] shrink-0" />
                       <span>Maintenance and AMC</span>
                     </div>
                   </div>
@@ -222,10 +222,10 @@ export default function SolutionsPage() {
             <div className="max-w-7xl mx-auto space-y-8">
               <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
                 <div className="space-y-2">
-                  <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722]">
+                  <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E]">
                     STEM KITS
                   </span>
-                  <h2 className="text-3xl sm:text-4xl font-black text-[#0B2545] tracking-tight">
+                  <h2 className="text-3xl sm:text-4xl font-black text-[#153A6B] tracking-tight">
                     Our 15 kits
                   </h2>
                   <p className="text-slate-600 text-sm sm:text-base max-w-2xl">
@@ -242,7 +242,7 @@ export default function SolutionsPage() {
                       onClick={() => setSelectedTrack(track)}
                       className={`px-4 py-2 rounded-xl text-xs font-bold transition cursor-pointer ${
                         selectedTrack === track
-                          ? "bg-[#0B2545] text-white shadow"
+                          ? "bg-[#153A6B] text-white shadow"
                           : "bg-white text-slate-700 border border-slate-200 hover:border-slate-300"
                       }`}
                     >
@@ -257,7 +257,7 @@ export default function SolutionsPage() {
                 {filteredKits.map((kit) => (
                   <div
                     key={kit.id}
-                    className="p-5 rounded-2xl border border-slate-200 bg-white hover:border-[#FF5722] hover:shadow-md transition-all duration-200 flex flex-col justify-between group"
+                    className="p-5 rounded-2xl border border-slate-200 bg-white hover:border-[#FF6F1E] hover:shadow-md transition-all duration-200 flex flex-col justify-between group"
                   >
                     <div>
                       {/* Visual container */}
@@ -272,7 +272,7 @@ export default function SolutionsPage() {
                           />
                         ) : (
                           <div className="w-full h-full flex flex-col items-center justify-center p-3 text-center">
-                            <Cpu className="w-6 h-6 text-slate-400 group-hover:text-[#FF5722] transition-colors mb-1" />
+                            <Cpu className="w-6 h-6 text-slate-400 group-hover:text-[#FF6F1E] transition-colors mb-1" />
                             <span className="text-[11px] font-semibold text-slate-400">
                               {kit.name}
                             </span>
@@ -280,10 +280,10 @@ export default function SolutionsPage() {
                         )}
                       </div>
 
-                      <span className="text-[10px] font-bold tracking-wider uppercase text-[#FF5722]">
+                      <span className="text-[10px] font-bold tracking-wider uppercase text-[#FF6F1E]">
                         {kit.track.toUpperCase()}
                       </span>
-                      <h4 className="text-sm font-bold text-[#0B2545] mt-0.5 mb-1 group-hover:text-[#FF5722] transition-colors">
+                      <h4 className="text-sm font-bold text-[#153A6B] mt-0.5 mb-1 group-hover:text-[#FF6F1E] transition-colors">
                         {kit.name}
                       </h4>
                       <p className="text-[11px] text-slate-500 leading-relaxed min-h-[44px]">
@@ -299,7 +299,7 @@ export default function SolutionsPage() {
                         href={kit.shopUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-flex items-center gap-1 text-xs font-bold text-[#FF5722] hover:underline"
+                        className="inline-flex items-center gap-1 text-xs font-bold text-[#FF6F1E] hover:underline"
                       >
                         <span>View on shop</span>
                         <ArrowRight className="w-3 h-3" />
@@ -315,10 +315,10 @@ export default function SolutionsPage() {
           <section id="industry" className="py-20 px-4 sm:px-8 bg-white">
             <div className="max-w-7xl mx-auto space-y-12">
               <div className="space-y-2">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722]">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E]">
                   FOR INDUSTRY
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-black text-[#0B2545] tracking-tight">
+                <h2 className="text-3xl sm:text-4xl font-black text-[#153A6B] tracking-tight">
                   Manufacturing, automation and R&amp;D
                 </h2>
               </div>
@@ -326,12 +326,12 @@ export default function SolutionsPage() {
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
                 {/* Left 5 Capabilities */}
                 <div className="lg:col-span-7 space-y-4">
-                  <div className="p-6 rounded-2xl border border-slate-200 bg-white hover:border-[#FF5722] transition flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-[#FFF5F0] text-[#FF5722] flex items-center justify-center shrink-0">
+                  <div className="p-6 rounded-2xl border border-slate-200 bg-white hover:border-[#FF6F1E] transition flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-xl bg-[#FFF8F5] text-[#FF6F1E] flex items-center justify-center shrink-0">
                       <Wrench className="w-5 h-5" />
                     </div>
                     <div>
-                      <h3 className="text-base font-bold text-[#0B2545]">
+                      <h3 className="text-base font-bold text-[#153A6B]">
                         Industrial Automation
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-600 mt-1">
@@ -341,12 +341,12 @@ export default function SolutionsPage() {
                     </div>
                   </div>
 
-                  <div className="p-6 rounded-2xl border border-slate-200 bg-white hover:border-[#FF5722] transition flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-[#FFF5F0] text-[#FF5722] flex items-center justify-center shrink-0">
+                  <div className="p-6 rounded-2xl border border-slate-200 bg-white hover:border-[#FF6F1E] transition flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-xl bg-[#FFF8F5] text-[#FF6F1E] flex items-center justify-center shrink-0">
                       <Layers className="w-5 h-5" />
                     </div>
                     <div>
-                      <h3 className="text-base font-bold text-[#0B2545]">
+                      <h3 className="text-base font-bold text-[#153A6B]">
                         Industrial Products
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-600 mt-1">
@@ -356,12 +356,12 @@ export default function SolutionsPage() {
                     </div>
                   </div>
 
-                  <div className="p-6 rounded-2xl border border-slate-200 bg-white hover:border-[#FF5722] transition flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-[#FFF5F0] text-[#FF5722] flex items-center justify-center shrink-0">
+                  <div className="p-6 rounded-2xl border border-slate-200 bg-white hover:border-[#FF6F1E] transition flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-xl bg-[#FFF8F5] text-[#FF6F1E] flex items-center justify-center shrink-0">
                       <Cpu className="w-5 h-5" />
                     </div>
                     <div>
-                      <h3 className="text-base font-bold text-[#0B2545]">
+                      <h3 className="text-base font-bold text-[#153A6B]">
                         PCB Design &amp; Manufacturing
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-600 mt-1">
@@ -371,12 +371,12 @@ export default function SolutionsPage() {
                     </div>
                   </div>
 
-                  <div className="p-6 rounded-2xl border border-slate-200 bg-white hover:border-[#FF5722] transition flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-[#FFF5F0] text-[#FF5722] flex items-center justify-center shrink-0">
+                  <div className="p-6 rounded-2xl border border-slate-200 bg-white hover:border-[#FF6F1E] transition flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-xl bg-[#FFF8F5] text-[#FF6F1E] flex items-center justify-center shrink-0">
                       <Bot className="w-5 h-5" />
                     </div>
                     <div>
-                      <h3 className="text-base font-bold text-[#0B2545]">
+                      <h3 className="text-base font-bold text-[#153A6B]">
                         Product Design &amp; R&amp;D
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-600 mt-1">
@@ -386,12 +386,12 @@ export default function SolutionsPage() {
                     </div>
                   </div>
 
-                  <div className="p-6 rounded-2xl border border-slate-200 bg-white hover:border-[#FF5722] transition flex items-start gap-4">
-                    <div className="w-10 h-10 rounded-xl bg-[#FFF5F0] text-[#FF5722] flex items-center justify-center shrink-0">
+                  <div className="p-6 rounded-2xl border border-slate-200 bg-white hover:border-[#FF6F1E] transition flex items-start gap-4">
+                    <div className="w-10 h-10 rounded-xl bg-[#FFF8F5] text-[#FF6F1E] flex items-center justify-center shrink-0">
                       <Radio className="w-5 h-5" />
                     </div>
                     <div>
-                      <h3 className="text-base font-bold text-[#0B2545]">
+                      <h3 className="text-base font-bold text-[#153A6B]">
                         Drones
                       </h3>
                       <p className="text-xs sm:text-sm text-slate-600 mt-1">
@@ -412,7 +412,7 @@ export default function SolutionsPage() {
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                       sizes="(max-width: 1024px) 100vw, 40vw"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#0B2545]/80 via-transparent to-transparent flex items-end p-4">
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#153A6B]/80 via-transparent to-transparent flex items-end p-4">
                       <p className="text-white text-xs font-semibold drop-shadow">
                         Industrial Robotic Arm &amp; Automation
                       </p>
@@ -428,7 +428,7 @@ export default function SolutionsPage() {
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                         sizes="(max-width: 1024px) 50vw, 20vw"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#0B2545]/80 via-transparent to-transparent flex items-end p-3">
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#153A6B]/80 via-transparent to-transparent flex items-end p-3">
                         <p className="text-white text-[11px] font-semibold drop-shadow">
                           Custom PCB R&amp;D
                         </p>
@@ -443,7 +443,7 @@ export default function SolutionsPage() {
                         className="object-cover group-hover:scale-105 transition-transform duration-500"
                         sizes="(max-width: 1024px) 50vw, 20vw"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#0B2545]/80 via-transparent to-transparent flex items-end p-3">
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#153A6B]/80 via-transparent to-transparent flex items-end p-3">
                         <p className="text-white text-[11px] font-semibold drop-shadow">
                           Drone Field Systems
                         </p>
@@ -459,10 +459,10 @@ export default function SolutionsPage() {
           <section id="support" className="py-20 px-4 sm:px-8 bg-slate-50 border-t border-slate-100">
             <div className="max-w-7xl mx-auto space-y-12">
               <div className="text-center space-y-2">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722]">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E]">
                   SUPPORT SERVICES
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-black text-[#0B2545] tracking-tight">
+                <h2 className="text-3xl sm:text-4xl font-black text-[#153A6B] tracking-tight">
                   Support that lasts beyond installation
                 </h2>
               </div>
@@ -475,10 +475,10 @@ export default function SolutionsPage() {
                       key={idx}
                       className="p-7 rounded-2xl border border-slate-200 bg-white shadow-sm flex flex-col justify-start"
                     >
-                      <div className="w-11 h-11 rounded-xl bg-[#FFF5F0] border border-[#FFE8DC] flex items-center justify-center text-[#FF5722] mb-5">
+                      <div className="w-11 h-11 rounded-xl bg-[#FFF8F5] border border-[#FFEFE6] flex items-center justify-center text-[#FF6F1E] mb-5">
                         <Icon className="w-5 h-5" />
                       </div>
-                      <h3 className="text-base font-bold text-[#0B2545] mb-2">
+                      <h3 className="text-base font-bold text-[#153A6B] mb-2">
                         {service.title}
                       </h3>
                       <p className="text-xs text-slate-600 leading-relaxed">

@@ -28,7 +28,7 @@ export default function HomePage() {
 
         <main className="flex-1">
           {/* HERO SECTION (Navy Blue Background - Exact Design) */}
-          <section className="relative w-full bg-[#0B1E38] text-white pt-12 pb-24 lg:pt-16 lg:pb-28 overflow-hidden">
+          <section className="relative w-full bg-[#102A4E] text-white pt-12 pb-24 lg:pt-16 lg:pb-28 overflow-hidden">
             {/* Subtle Grid / Circuit Background */}
             <div className="absolute inset-0 bg-[radial-gradient(#1E3A5F_1px,transparent_1px)] [background-size:24px_24px] opacity-40 pointer-events-none" />
 
@@ -38,7 +38,7 @@ export default function HomePage() {
                 <div className="lg:col-span-7 space-y-6">
                   {/* Tagline */}
                   <div className="inline-block">
-                    <span className="text-[11px] sm:text-xs font-bold tracking-[0.2em] uppercase text-[#FF7043] bg-white/5 border border-white/10 px-3 py-1 rounded-full">
+                    <span className="text-[11px] sm:text-xs font-bold tracking-[0.2em] uppercase text-[#FF8742] bg-white/5 border border-white/10 px-3 py-1 rounded-full">
                       {COMPANY_INFO.tagline}
                     </span>
                   </div>
@@ -47,8 +47,8 @@ export default function HomePage() {
                   <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.12]">
                     Indigenous <br />
                     technology for <br />
-                    <span className="text-[#FF5722]">classrooms</span> <br className="sm:hidden" />
-                    and <span className="text-[#FF5722]">industry</span>
+                    <span className="text-[#FF6F1E]">classrooms</span> <br className="sm:hidden" />
+                    and <span className="text-[#FF6F1E]">industry</span>
                   </h1>
 
                   {/* Subheadline */}
@@ -60,7 +60,7 @@ export default function HomePage() {
                   <div className="flex flex-wrap items-center gap-4 pt-2">
                     <Link
                       href="/solutions"
-                      className="px-6 py-3.5 bg-[#FF5722] hover:bg-[#E64A19] text-white font-bold text-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-150 flex items-center gap-2 group cursor-pointer"
+                      className="px-6 py-3.5 bg-[#FF6F1E] hover:bg-[#F45B0A] text-white font-bold text-sm rounded-xl shadow-lg hover:shadow-xl transition-all duration-150 flex items-center gap-2 group cursor-pointer"
                     >
                       <span>Explore Lab Solutions</span>
                       <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -68,9 +68,9 @@ export default function HomePage() {
 
                     <button
                       onClick={() => setIsQuoteOpen(true)}
-                      className="px-6 py-3.5 bg-[#0F2748] hover:bg-[#14325C] border border-[#1E3A5F] text-white font-semibold text-sm rounded-xl transition duration-150 flex items-center gap-2 cursor-pointer"
+                      className="px-6 py-3.5 bg-[#173E73] hover:bg-[#1A437C] border border-[#20487E] text-white font-semibold text-sm rounded-xl transition duration-150 flex items-center gap-2 cursor-pointer"
                     >
-                      <MessageSquare className="w-4 h-4 text-[#FF7043]" />
+                      <MessageSquare className="w-4 h-4 text-[#FF8742]" />
                       <span>Talk to Us</span>
                     </button>
                   </div>
@@ -80,7 +80,7 @@ export default function HomePage() {
                     {COMPANY_INFO.recognitions.map((item, idx) => (
                       <div
                         key={idx}
-                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#0F2748]/90 border border-[#1E3A5F] text-xs font-medium text-slate-200 shadow-sm"
+                        className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#173E73]/90 border border-[#20487E] text-xs font-medium text-slate-200 shadow-sm"
                       >
                         <Check className="w-3.5 h-3.5 text-emerald-400 stroke-[3]" />
                         <span>{item.title}</span>

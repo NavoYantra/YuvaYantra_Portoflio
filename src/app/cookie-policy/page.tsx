@@ -19,15 +19,15 @@ export default function CookiePolicyPage() {
 
         <main className="flex-1">
           {/* Header Banner */}
-          <section className="bg-[#0B1E38] text-white py-14 sm:py-18 px-4 sm:px-8 relative overflow-hidden">
+          <section className="bg-[#102A4E] text-white py-14 sm:py-18 px-4 sm:px-8 relative overflow-hidden">
             <div className="max-w-5xl mx-auto space-y-4">
               <div className="text-xs font-semibold text-slate-400">
                 <Link href="/" className="hover:text-white transition">
                   Home
                 </Link>{" "}
-                / <span className="text-[#FF7043]">Legal</span> / <span>Cookie Policy</span>
+                / <span className="text-[#FF8742]">Legal</span> / <span>Cookie Policy</span>
               </div>
-              <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722] block">
+              <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E] block">
                 PRIVACY TRANSPARENCY
               </span>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white leading-tight">
@@ -60,7 +60,7 @@ export default function CookiePolicyPage() {
 
               {/* 1. What Are Cookies */}
               <div className="space-y-4 border-b border-slate-100 pb-8">
-                <h3 className="text-xl font-black text-[#0B2545]">1. What Are Cookies?</h3>
+                <h3 className="text-xl font-black text-[#153A6B]">1. What Are Cookies?</h3>
                 <p>
                   Cookies are small text files stored on your browser or device when you visit websites. They help the website remember your device preferences, maintain secure sessions, and ensure responsive page loading.
                 </p>
@@ -68,23 +68,23 @@ export default function CookiePolicyPage() {
 
               {/* 2. Types of Cookies We Use */}
               <div className="space-y-4 border-b border-slate-100 pb-8">
-                <h3 className="text-xl font-black text-[#0B2545]">2. Categories of Cookies Used</h3>
+                <h3 className="text-xl font-black text-[#153A6B]">2. Categories of Cookies Used</h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
                   <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
-                    <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#0B2545] text-white">
+                    <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#153A6B] text-white">
                       Strictly Necessary
                     </span>
-                    <h4 className="text-sm font-bold text-[#0B2545]">Essential &amp; Security Cookies</h4>
+                    <h4 className="text-sm font-bold text-[#153A6B]">Essential &amp; Security Cookies</h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Essential for navigation, preventing Cross-Site Request Forgery (CSRF), and securing enquiry forms. These cannot be switched off without impairing site functionality.
                     </p>
                   </div>
 
                   <div className="p-5 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
-                    <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#FF5722] text-white">
+                    <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-[#FF6F1E] text-white">
                       Performance &amp; UI
                     </span>
-                    <h4 className="text-sm font-bold text-[#0B2545]">Preference &amp; Cache Cookies</h4>
+                    <h4 className="text-sm font-bold text-[#153A6B]">Preference &amp; Cache Cookies</h4>
                     <p className="text-xs text-slate-600 leading-relaxed">
                       Remembering UI preferences, smooth scrolling positions, and caching static assets locally to ensure lightning-fast page transitions on mobile devices.
                     </p>
@@ -94,7 +94,7 @@ export default function CookiePolicyPage() {
 
               {/* 3. Managing Cookies */}
               <div className="space-y-4 border-b border-slate-100 pb-8">
-                <h3 className="text-xl font-black text-[#0B2545]">3. How You Can Control Cookies</h3>
+                <h3 className="text-xl font-black text-[#153A6B]">3. How You Can Control Cookies</h3>
                 <p className="text-xs sm:text-sm text-slate-600">
                   Most modern web browsers allow you to manage or block cookies through browser settings (Chrome, Firefox, Safari, Edge). Please note that completely disabling essential cookies may impact interactive forms on the website.
                 </p>
@@ -102,10 +102,10 @@ export default function CookiePolicyPage() {
 
               {/* 4. Contact */}
               <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-2">
-                <h3 className="text-base font-bold text-[#0B2545]">Questions Regarding Cookie Usage?</h3>
+                <h3 className="text-base font-bold text-[#153A6B]">Questions Regarding Cookie Usage?</h3>
                 <p className="text-xs sm:text-sm text-slate-600">
                   If you have any questions regarding our cookie practices, please email our legal team at{" "}
-                  <a href={`mailto:${COMPANY_INFO.emailOfficial}`} className="text-[#FF5722] font-semibold underline">
+                  <a href={`mailto:${COMPANY_INFO.emailOfficial}`} className="text-[#FF6F1E] font-semibold underline">
                     {COMPANY_INFO.emailOfficial}
                   </a>.
                 </p>

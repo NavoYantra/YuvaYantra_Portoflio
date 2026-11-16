@@ -59,15 +59,15 @@ export default function AboutPage() {
 
         <main className="flex-1">
           {/* Header Banner */}
-          <section className="bg-[#0B1E38] text-white py-16 sm:py-20 px-4 sm:px-8 relative overflow-hidden">
+          <section className="bg-[#102A4E] text-white py-16 sm:py-20 px-4 sm:px-8 relative overflow-hidden">
             <div className="max-w-7xl mx-auto space-y-4">
               <div className="text-xs font-semibold text-slate-400">
                 <Link href="/" className="hover:text-white transition">
                   Home
                 </Link>{" "}
-                / <span className="text-[#FF7043]">About Us</span>
+                / <span className="text-[#FF8742]">About Us</span>
               </div>
-              <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722] block">
+              <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E] block">
                 ABOUT US
               </span>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white max-w-3xl leading-tight">
@@ -85,15 +85,15 @@ export default function AboutPage() {
           <section className="py-20 px-4 sm:px-8 bg-white">
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
               <div className="lg:col-span-7 space-y-6">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722]">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E]">
                   OUR STORY
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-black text-[#0B2545] tracking-tight">
+                <h2 className="text-3xl sm:text-4xl font-black text-[#153A6B] tracking-tight">
                   Indigenous technology, built for classrooms and factories
                 </h2>
                 <div className="space-y-4 text-slate-600 leading-relaxed text-base">
                   <p>
-                    <strong className="text-[#0B2545]">
+                    <strong className="text-[#153A6B]">
                       {COMPANY_INFO.name}
                     </strong>{" "}
                     was incorporated on {COMPANY_INFO.incorporatedDate}. We are
@@ -106,7 +106,7 @@ export default function AboutPage() {
                     products and PCBs, deliver industrial automation and product
                     R&amp;D, and set up future-ready labs in schools and colleges
                     through our education brand,{" "}
-                    <strong className="text-[#FF5722]">NavoYantra</strong>.
+                    <strong className="text-[#FF6F1E]">NavoYantra</strong>.
                   </p>
                 </div>
               </div>
@@ -120,9 +120,9 @@ export default function AboutPage() {
                   className="object-cover group-hover:scale-105 transition-transform duration-500"
                   sizes="(max-width: 1024px) 100vw, 40vw"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0B2545]/85 via-black/20 to-transparent flex items-end p-5">
+                <div className="absolute inset-0 bg-gradient-to-t from-[#153A6B]/85 via-black/20 to-transparent flex items-end p-5">
                   <div>
-                    <span className="text-[10px] font-bold uppercase tracking-widest text-[#FF7043] block">
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-[#FF8742] block">
                       R&amp;D &amp; Training Facility
                     </span>
                     <p className="text-xs font-semibold text-white drop-shadow mt-0.5">
@@ -147,9 +147,9 @@ export default function AboutPage() {
                     className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
                     sizes="(max-width: 1024px) 100vw, 33vw"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0B2545]/90 via-[#0B2545]/20 to-transparent flex items-end p-5">
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#153A6B]/90 via-[#153A6B]/20 to-transparent flex items-end p-5">
                     <div className="text-white text-left">
-                      <span className="text-[10px] uppercase font-bold tracking-widest text-[#FF7043] block">
+                      <span className="text-[10px] uppercase font-bold tracking-widest text-[#FF8742] block">
                         Founder &amp; Trainer
                       </span>
                       <p className="text-xs font-medium text-slate-200 mt-0.5">
@@ -160,10 +160,10 @@ export default function AboutPage() {
                 </div>
 
                 <div>
-                  <h3 className="text-2xl font-black text-[#0B2545]">
+                  <h3 className="text-2xl font-black text-[#153A6B]">
                     {COMPANY_INFO.founder.name}
                   </h3>
-                  <p className="text-xs font-bold uppercase tracking-widest text-[#FF5722]">
+                  <p className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E]">
                     {COMPANY_INFO.founder.title}
                   </p>
                   <p className="text-xs text-slate-500 mt-1">
@@ -174,15 +174,15 @@ export default function AboutPage() {
 
               {/* Founder's Quote & Narrative */}
               <div className="lg:col-span-8 space-y-6">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722]">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E]">
                   FOUNDER’S MESSAGE
                 </span>
 
-                <div className="text-[#FF5722]">
+                <div className="text-[#FF6F1E]">
                   <Quote className="w-12 h-12 rotate-180 opacity-80" />
                 </div>
 
-                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#0B2545] leading-snug">
+                <h3 className="text-2xl sm:text-3xl font-extrabold text-[#153A6B] leading-snug">
                   {COMPANY_INFO.founder.message[0]}
                 </h3>
 
@@ -198,9 +198,9 @@ export default function AboutPage() {
           <section className="py-20 px-4 sm:px-8 bg-white">
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8">
               {/* Vision Card */}
-              <div className="lg:col-span-6 rounded-3xl bg-[#0B2545] text-white p-8 sm:p-10 shadow-lg flex flex-col justify-between">
+              <div className="lg:col-span-6 rounded-3xl bg-[#153A6B] text-white p-8 sm:p-10 shadow-lg flex flex-col justify-between">
                 <div className="space-y-4">
-                  <span className="text-xs font-bold uppercase tracking-widest text-[#FF7043]">
+                  <span className="text-xs font-bold uppercase tracking-widest text-[#FF8742]">
                     OUR VISION
                   </span>
                   <h3 className="text-2xl sm:text-3xl font-bold leading-relaxed">
@@ -214,13 +214,13 @@ export default function AboutPage() {
               {/* Mission Card */}
               <div className="lg:col-span-6 rounded-3xl bg-slate-50 border border-slate-200/80 p-8 sm:p-10 flex flex-col justify-between">
                 <div className="space-y-5">
-                  <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722]">
+                  <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E]">
                     OUR MISSION
                   </span>
 
                   <div className="space-y-4">
                     <div className="flex items-start gap-4">
-                      <span className="font-mono font-bold text-[#FF5722] text-sm shrink-0">
+                      <span className="font-mono font-bold text-[#FF6F1E] text-sm shrink-0">
                         01
                       </span>
                       <p className="text-sm font-medium text-slate-700 leading-relaxed">
@@ -229,7 +229,7 @@ export default function AboutPage() {
                       </p>
                     </div>
                     <div className="flex items-start gap-4">
-                      <span className="font-mono font-bold text-[#FF5722] text-sm shrink-0">
+                      <span className="font-mono font-bold text-[#FF6F1E] text-sm shrink-0">
                         02
                       </span>
                       <p className="text-sm font-medium text-slate-700 leading-relaxed">
@@ -238,7 +238,7 @@ export default function AboutPage() {
                       </p>
                     </div>
                     <div className="flex items-start gap-4">
-                      <span className="font-mono font-bold text-[#FF5722] text-sm shrink-0">
+                      <span className="font-mono font-bold text-[#FF6F1E] text-sm shrink-0">
                         03
                       </span>
                       <p className="text-sm font-medium text-slate-700 leading-relaxed">
@@ -247,7 +247,7 @@ export default function AboutPage() {
                       </p>
                     </div>
                     <div className="flex items-start gap-4">
-                      <span className="font-mono font-bold text-[#FF5722] text-sm shrink-0">
+                      <span className="font-mono font-bold text-[#FF6F1E] text-sm shrink-0">
                         04
                       </span>
                       <p className="text-sm font-medium text-slate-700 leading-relaxed">
@@ -264,10 +264,10 @@ export default function AboutPage() {
           <section className="py-20 px-4 sm:px-8 bg-slate-50 border-t border-b border-slate-100">
             <div className="max-w-7xl mx-auto">
               <div className="text-center space-y-2 mb-14">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722]">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E]">
                   OUR VALUES
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-black text-[#0B2545] tracking-tight">
+                <h2 className="text-3xl sm:text-4xl font-black text-[#153A6B] tracking-tight">
                   What we stand for
                 </h2>
               </div>
@@ -280,11 +280,11 @@ export default function AboutPage() {
                       key={idx}
                       className="bg-white p-7 rounded-2xl border border-slate-200/80 shadow-sm flex items-start gap-4"
                     >
-                      <div className="w-11 h-11 rounded-xl bg-[#FFF5F0] border border-[#FFE8DC] flex items-center justify-center text-[#FF5722] shrink-0 mt-0.5">
+                      <div className="w-11 h-11 rounded-xl bg-[#FFF8F5] border border-[#FFEFE6] flex items-center justify-center text-[#FF6F1E] shrink-0 mt-0.5">
                         <Icon className="w-5 h-5" />
                       </div>
                       <div className="space-y-1">
-                        <h3 className="text-base font-bold text-[#0B2545]">
+                        <h3 className="text-base font-bold text-[#153A6B]">
                           {val.title}
                         </h3>
                         <p className="text-xs text-slate-600 leading-relaxed">
@@ -303,10 +303,10 @@ export default function AboutPage() {
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
               {/* Recognitions */}
               <div className="lg:col-span-7 space-y-6">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722]">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E]">
                   RECOGNITION
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-black text-[#0B2545] tracking-tight">
+                <h2 className="text-3xl sm:text-4xl font-black text-[#153A6B] tracking-tight">
                   Registered, recognised and government-ready
                 </h2>
 
@@ -314,18 +314,18 @@ export default function AboutPage() {
                   {COMPANY_INFO.recognitions.map((rec, idx) => (
                     <div
                       key={idx}
-                      className="p-6 rounded-2xl border border-slate-200 bg-gradient-to-br from-white to-slate-50 flex flex-col justify-between space-y-4 hover:border-[#FF5722]/50 hover:shadow-md transition group"
+                      className="p-6 rounded-2xl border border-slate-200 bg-gradient-to-br from-white to-slate-50 flex flex-col justify-between space-y-4 hover:border-[#FF6F1E]/50 hover:shadow-md transition group"
                     >
                       <div className="flex items-center justify-between">
-                        <div className="w-12 h-12 rounded-xl bg-[#0B2545]/5 border border-slate-200 flex items-center justify-center text-[#0B2545] group-hover:text-[#FF5722] transition-colors">
-                          <ShieldCheck className="w-6 h-6 text-[#FF5722]" />
+                        <div className="w-12 h-12 rounded-xl bg-[#153A6B]/5 border border-slate-200 flex items-center justify-center text-[#153A6B] group-hover:text-[#FF6F1E] transition-colors">
+                          <ShieldCheck className="w-6 h-6 text-[#FF6F1E]" />
                         </div>
                         <span className="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-emerald-50 text-emerald-700 border border-emerald-200">
                           Verified
                         </span>
                       </div>
                       <div>
-                        <h4 className="text-sm font-bold text-[#0B2545] group-hover:text-[#FF5722] transition-colors">
+                        <h4 className="text-sm font-bold text-[#153A6B] group-hover:text-[#FF6F1E] transition-colors">
                           {rec.title}
                         </h4>
                         <p className="text-xs text-slate-500 font-medium mt-0.5">
@@ -339,14 +339,14 @@ export default function AboutPage() {
 
               {/* Company Facts Table */}
               <div className="lg:col-span-5 rounded-3xl border border-slate-200 bg-white p-7 sm:p-8 shadow-sm">
-                <h3 className="text-lg font-black text-[#0B2545] pb-4 border-b border-slate-100">
+                <h3 className="text-lg font-black text-[#153A6B] pb-4 border-b border-slate-100">
                   Company facts
                 </h3>
 
                 <dl className="divide-y divide-slate-100 text-sm">
                   <div className="py-3 flex justify-between gap-4">
                     <dt className="text-slate-500">Legal name</dt>
-                    <dd className="font-semibold text-[#0B2545] text-right">
+                    <dd className="font-semibold text-[#153A6B] text-right">
                       {COMPANY_INFO.legalName}
                     </dd>
                   </div>
@@ -382,7 +382,7 @@ export default function AboutPage() {
                   </div>
                   <div className="py-3 flex justify-between gap-4">
                     <dt className="text-slate-500">Education brand</dt>
-                    <dd className="font-semibold text-[#FF5722] text-right text-xs sm:text-sm">
+                    <dd className="font-semibold text-[#FF6F1E] text-right text-xs sm:text-sm">
                       {COMPANY_INFO.educationBrand}
                     </dd>
                   </div>

@@ -16,7 +16,7 @@ import { COMPANY_INFO } from "@/data/websiteData";
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="w-full bg-[#0B1E38] text-white pt-16 pb-12 border-t border-slate-800">
+    <footer className="w-full bg-[#102A4E] text-white pt-16 pb-12 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-8">
         {/* Main Footer Grid: 5 Column Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-8 pb-12 border-b border-white/10">
@@ -30,7 +30,7 @@ export const Footer: React.FC = () => {
             <p className="text-sm text-slate-300 leading-relaxed max-w-sm pt-2">
               Robotics, AI, IoT, drones and industrial automation, designed and
               made in India. Our education brand{" "}
-              <span className="text-[#FF7043] font-semibold">NavoYantra</span>{" "}
+              <span className="text-[#FF8742] font-semibold">NavoYantra</span>{" "}
               brings STEM kits and labs to schools and colleges.
             </p>
 
@@ -41,7 +41,7 @@ export const Footer: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Instagram"
-                className="w-9 h-9 rounded-lg border border-white/20 flex items-center justify-center text-slate-300 hover:text-[#FF5722] hover:border-[#FF5722] transition-colors"
+                className="w-9 h-9 rounded-lg border border-white/20 flex items-center justify-center text-slate-300 hover:text-[#FF6F1E] hover:border-[#FF6F1E] transition-colors"
               >
                 <InstagramIcon className="w-4 h-4" />
               </a>
@@ -50,7 +50,7 @@ export const Footer: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="YouTube"
-                className="w-9 h-9 rounded-lg border border-white/20 flex items-center justify-center text-slate-300 hover:text-[#FF5722] hover:border-[#FF5722] transition-colors"
+                className="w-9 h-9 rounded-lg border border-white/20 flex items-center justify-center text-slate-300 hover:text-[#FF6F1E] hover:border-[#FF6F1E] transition-colors"
               >
                 <YoutubeIcon className="w-4 h-4" />
               </a>
@@ -59,7 +59,7 @@ export const Footer: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="LinkedIn"
-                className="w-9 h-9 rounded-lg border border-white/20 flex items-center justify-center text-slate-300 hover:text-[#FF5722] hover:border-[#FF5722] transition-colors"
+                className="w-9 h-9 rounded-lg border border-white/20 flex items-center justify-center text-slate-300 hover:text-[#FF6F1E] hover:border-[#FF6F1E] transition-colors"
               >
                 <LinkedinIcon className="w-4 h-4" />
               </a>
@@ -136,7 +136,7 @@ export const Footer: React.FC = () => {
                   href={COMPANY_INFO.shopUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-[#FF7043] hover:underline"
+                  className="inline-flex items-center gap-1.5 text-[#FF8742] hover:underline"
                 >
                   <span>Shop NavoYantra</span>
                   <ExternalLink className="w-3 h-3" />
@@ -153,19 +153,19 @@ export const Footer: React.FC = () => {
             <ul className="space-y-2.5 text-sm text-slate-300">
               <li>
                 <Link href="/privacy-policy" className="hover:text-white transition-colors flex items-center gap-1.5">
-                  <Lock className="w-3.5 h-3.5 text-[#FF7043]" />
+                  <Lock className="w-3.5 h-3.5 text-[#FF8742]" />
                   <span>Privacy Policy</span>
                 </Link>
               </li>
               <li>
                 <Link href="/terms-and-conditions" className="hover:text-white transition-colors flex items-center gap-1.5">
-                  <Scale className="w-3.5 h-3.5 text-[#FF7043]" />
+                  <Scale className="w-3.5 h-3.5 text-[#FF8742]" />
                   <span>Terms &amp; Conditions</span>
                 </Link>
               </li>
               <li>
                 <Link href="/cookie-policy" className="hover:text-white transition-colors flex items-center gap-1.5">
-                  <FileText className="w-3.5 h-3.5 text-[#FF7043]" />
+                  <FileText className="w-3.5 h-3.5 text-[#FF8742]" />
                   <span>Cookie Policy</span>
                 </Link>
               </li>
@@ -189,13 +189,13 @@ export const Footer: React.FC = () => {
             </h4>
             <div className="space-y-3.5 text-sm text-slate-300">
               <div className="flex items-start gap-2.5">
-                <MapPin className="w-4 h-4 text-[#FF5722] shrink-0 mt-0.5" />
+                <MapPin className="w-4 h-4 text-[#FF6F1E] shrink-0 mt-0.5" />
                 <span className="leading-relaxed text-xs">
                   {COMPANY_INFO.address}
                 </span>
               </div>
               <div className="flex items-start gap-2.5">
-                <Phone className="w-4 h-4 text-[#FF5722] shrink-0 mt-0.5" />
+                <Phone className="w-4 h-4 text-[#FF6F1E] shrink-0 mt-0.5" />
                 <div className="text-xs leading-tight space-y-1">
                   <p>
                     <a href={`tel:${COMPANY_INFO.phone1.replace(/\s+/g, "")}`} className="hover:text-white">
@@ -210,7 +210,7 @@ export const Footer: React.FC = () => {
                 </div>
               </div>
               <div className="flex items-start gap-2.5">
-                <Mail className="w-4 h-4 text-[#FF5722] shrink-0 mt-0.5" />
+                <Mail className="w-4 h-4 text-[#FF6F1E] shrink-0 mt-0.5" />
                 <a
                   href={`mailto:${COMPANY_INFO.emailOfficial}`}
                   className="text-xs hover:text-white transition-colors"
@@ -255,7 +255,7 @@ export const Footer: React.FC = () => {
               <span className="text-slate-400 block">Nodal Grievance Officer:</span>
               <span className="text-white font-medium">
                 {COMPANY_INFO.grievanceOfficer.name} (
-                <a href={`mailto:${COMPANY_INFO.grievanceOfficer.email}`} className="text-[#FF7043] underline">
+                <a href={`mailto:${COMPANY_INFO.grievanceOfficer.email}`} className="text-[#FF8742] underline">
                   {COMPANY_INFO.grievanceOfficer.email}
                 </a>
                 )

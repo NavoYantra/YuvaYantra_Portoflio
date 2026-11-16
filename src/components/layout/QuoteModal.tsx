@@ -58,9 +58,9 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
         onClick={(e) => e.stopPropagation()}
       >
         {/* Header */}
-        <div className="bg-[#0B1E38] px-6 py-5 text-white flex items-center justify-between">
+        <div className="bg-[#102A4E] px-6 py-5 text-white flex items-center justify-between">
           <div>
-            <span className="text-xs uppercase tracking-wider text-[#FF7043] font-semibold">
+            <span className="text-xs uppercase tracking-wider text-[#FF8742] font-semibold">
               Get A Tailored Proposal
             </span>
             <h3 className="text-xl font-bold tracking-tight text-white mt-0.5">
@@ -95,7 +95,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                   placeholder="Your name"
                   value={formData.fullName}
                   onChange={(e) => setFormData({ ...formData, fullName: e.target.value })}
-                  className="w-full pl-9 pr-3 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF5722] focus:border-transparent transition"
+                  className="w-full pl-9 pr-3 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF6F1E] focus:border-transparent transition"
                 />
               </div>
             </div>
@@ -112,7 +112,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                   placeholder="Organisation name"
                   value={formData.orgName}
                   onChange={(e) => setFormData({ ...formData, orgName: e.target.value })}
-                  className="w-full pl-9 pr-3 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF5722] focus:border-transparent transition"
+                  className="w-full pl-9 pr-3 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF6F1E] focus:border-transparent transition"
                 />
               </div>
             </div>
@@ -131,7 +131,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                   placeholder="you@example.com"
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                  className="w-full pl-9 pr-3 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF5722] focus:border-transparent transition"
+                  className="w-full pl-9 pr-3 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF6F1E] focus:border-transparent transition"
                 />
               </div>
             </div>
@@ -148,7 +148,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
                   placeholder="+91 95825..."
                   value={formData.phone}
                   onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                  className="w-full pl-9 pr-3 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF5722] focus:border-transparent transition"
+                  className="w-full pl-9 pr-3 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF6F1E] focus:border-transparent transition"
                 />
               </div>
             </div>
@@ -161,7 +161,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
             <select
               value={formData.interest}
               onChange={(e) => setFormData({ ...formData, interest: e.target.value })}
-              className="w-full px-3 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF5722] focus:border-transparent bg-white text-slate-800"
+              className="w-full px-3 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF6F1E] focus:border-transparent bg-white text-slate-800"
             >
               <option value="Lab setup (STEM / Robotics / AI / IoT / ATL)">
                 Lab setup (STEM / Robotics / AI / IoT / ATL)
@@ -196,7 +196,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
               placeholder="Tell us about student count, budget range, or industrial specifications..."
               value={formData.message}
               onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-              className="w-full px-3 py-2 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF5722] focus:border-transparent resize-none"
+              className="w-full px-3 py-2 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF6F1E] focus:border-transparent resize-none"
             />
           </div>
 
@@ -209,7 +209,7 @@ export const QuoteModal: React.FC<QuoteModalProps> = ({
             <button
               type="submit"
               disabled={isSubmitting}
-              className="px-6 py-2.5 bg-[#FF5722] hover:bg-[#E64A19] text-white font-semibold text-sm rounded-xl shadow-md hover:shadow-lg transition-all flex items-center gap-2 disabled:opacity-70 cursor-pointer"
+              className="px-6 py-2.5 bg-[#FF6F1E] hover:bg-[#F45B0A] text-white font-semibold text-sm rounded-xl shadow-md hover:shadow-lg transition-all flex items-center gap-2 disabled:opacity-70 cursor-pointer"
             >
               {isSubmitting ? (
                 <span>Submitting...</span>

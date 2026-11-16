@@ -50,15 +50,15 @@ export default function BlogPage() {
 
         <main className="flex-1">
           {/* Header Banner */}
-          <section className="bg-[#0B1E38] text-white py-16 sm:py-20 px-4 sm:px-8 relative overflow-hidden">
+          <section className="bg-[#102A4E] text-white py-16 sm:py-20 px-4 sm:px-8 relative overflow-hidden">
             <div className="max-w-7xl mx-auto space-y-4">
               <div className="text-xs font-semibold text-slate-400">
                 <Link href="/" className="hover:text-white transition">
                   Home
                 </Link>{" "}
-                / <span className="text-[#FF7043]">Blog &amp; News</span>
+                / <span className="text-[#FF8742]">Blog &amp; News</span>
               </div>
-              <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722] block">
+              <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E] block">
                 BLOG &amp; NEWS
               </span>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white max-w-3xl leading-tight">
@@ -82,7 +82,7 @@ export default function BlogPage() {
                     onClick={() => setSelectedCategory(cat)}
                     className={`px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition cursor-pointer ${
                       selectedCategory === cat
-                        ? "bg-[#0B2545] text-white shadow"
+                        ? "bg-[#153A6B] text-white shadow"
                         : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                     }`}
                   >
@@ -93,7 +93,7 @@ export default function BlogPage() {
 
               {/* Featured Post Card (Exact Design from PDF) */}
               {selectedCategory === "All" && (
-                <div className="p-8 sm:p-10 rounded-3xl border border-slate-200 bg-white hover:border-[#FF5722]/50 hover:shadow-xl transition-all duration-200 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div className="p-8 sm:p-10 rounded-3xl border border-slate-200 bg-white hover:border-[#FF6F1E]/50 hover:shadow-xl transition-all duration-200 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                   <div className="lg:col-span-6 relative w-full h-64 sm:h-80 rounded-2xl overflow-hidden border border-slate-200 group shadow-sm">
                     {featuredPost.image ? (
                       <Image
@@ -115,7 +115,7 @@ export default function BlogPage() {
                   </div>
 
                   <div className="lg:col-span-6 space-y-4">
-                    <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#FF5722]">
+                    <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#FF6F1E]">
                       <span>{featuredPost.category}</span>
                       <span>•</span>
                       <span className="text-slate-500 font-normal">
@@ -123,7 +123,7 @@ export default function BlogPage() {
                       </span>
                     </div>
 
-                    <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0B2545] leading-snug">
+                    <h2 className="text-2xl sm:text-3xl font-extrabold text-[#153A6B] leading-snug">
                       {featuredPost.title}
                     </h2>
 
@@ -132,7 +132,7 @@ export default function BlogPage() {
                     </p>
 
                     <div className="pt-2">
-                      <button className="px-6 py-3 bg-[#FF5722] hover:bg-[#E64A19] text-white font-bold text-sm rounded-xl shadow-md transition flex items-center gap-2 cursor-pointer">
+                      <button className="px-6 py-3 bg-[#FF6F1E] hover:bg-[#F45B0A] text-white font-bold text-sm rounded-xl shadow-md transition flex items-center gap-2 cursor-pointer">
                         <span>Read Article</span>
                         <ArrowRight className="w-4 h-4" />
                       </button>
@@ -146,7 +146,7 @@ export default function BlogPage() {
                 {filteredPosts.map((post) => (
                   <div
                     key={post.id}
-                    className="p-6 rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-lg hover:border-[#FF5722]/50 transition-all duration-200 flex flex-col justify-between group"
+                    className="p-6 rounded-3xl border border-slate-200 bg-white shadow-sm hover:shadow-lg hover:border-[#FF6F1E]/50 transition-all duration-200 flex flex-col justify-between group"
                   >
                     <div>
                       {/* Article Image */}
@@ -161,7 +161,7 @@ export default function BlogPage() {
                           />
                         ) : (
                           <div className="w-full h-full flex flex-col items-center justify-center p-4 text-center">
-                            <BookOpen className="w-6 h-6 text-slate-400 group-hover:text-[#FF5722] mb-1" />
+                            <BookOpen className="w-6 h-6 text-slate-400 group-hover:text-[#FF6F1E] mb-1" />
                             <span className="text-xs font-semibold text-slate-400">
                               {post.title}
                             </span>
@@ -170,13 +170,13 @@ export default function BlogPage() {
                       </div>
 
                       <div className="flex items-center justify-between text-[11px] font-bold tracking-wider uppercase mb-1">
-                        <span className="text-[#FF5722]">{post.category}</span>
+                        <span className="text-[#FF6F1E]">{post.category}</span>
                         <span className="text-slate-400 font-normal">
                           {post.date}
                         </span>
                       </div>
 
-                      <h3 className="text-base font-bold text-[#0B2545] group-hover:text-[#FF5722] transition-colors leading-snug mb-2">
+                      <h3 className="text-base font-bold text-[#153A6B] group-hover:text-[#FF6F1E] transition-colors leading-snug mb-2">
                         {post.title}
                       </h3>
 
@@ -186,7 +186,7 @@ export default function BlogPage() {
                     </div>
 
                     <div className="pt-4 border-t border-slate-100 mt-5">
-                      <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[#0B2545] group-hover:text-[#FF5722] group-hover:translate-x-1 transition-all cursor-pointer">
+                      <span className="inline-flex items-center gap-1.5 text-xs font-bold text-[#153A6B] group-hover:text-[#FF6F1E] group-hover:translate-x-1 transition-all cursor-pointer">
                         <span>Read more</span>
                         <ArrowRight className="w-3.5 h-3.5" />
                       </span>
@@ -197,7 +197,7 @@ export default function BlogPage() {
 
               {/* Pagination */}
               <div className="flex items-center justify-center gap-2 pt-8">
-                <span className="w-9 h-9 rounded-xl bg-[#0B2545] text-white text-xs font-bold flex items-center justify-center">
+                <span className="w-9 h-9 rounded-xl bg-[#153A6B] text-white text-xs font-bold flex items-center justify-center">
                   1
                 </span>
                 <button className="w-9 h-9 rounded-xl border border-slate-200 text-slate-700 text-xs font-bold hover:bg-slate-50 flex items-center justify-center cursor-pointer">
@@ -213,10 +213,10 @@ export default function BlogPage() {
               </div>
 
               {/* Newsletter Box (Exact Design from PDF page 21) */}
-              <div className="rounded-3xl bg-[#0B1E38] text-white p-8 sm:p-10 shadow-xl">
+              <div className="rounded-3xl bg-[#102A4E] text-white p-8 sm:p-10 shadow-xl">
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
                   <div className="lg:col-span-6 space-y-2">
-                    <span className="text-xs font-bold uppercase tracking-widest text-[#FF7043]">
+                    <span className="text-xs font-bold uppercase tracking-widest text-[#FF8742]">
                       NEWSLETTER
                     </span>
                     <h3 className="text-2xl sm:text-3xl font-extrabold leading-snug text-white">
@@ -247,11 +247,11 @@ export default function BlogPage() {
                           placeholder="Your email address"
                           value={newsletterEmail}
                           onChange={(e) => setNewsletterEmail(e.target.value)}
-                          className="w-full px-4 py-3 rounded-xl bg-white text-slate-900 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#FF5722]"
+                          className="w-full px-4 py-3 rounded-xl bg-white text-slate-900 text-sm placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#FF6F1E]"
                         />
                         <button
                           type="submit"
-                          className="w-full sm:w-auto px-7 py-3 bg-[#FF5722] hover:bg-[#E64A19] text-white font-bold text-sm rounded-xl shadow transition cursor-pointer flex items-center justify-center gap-2 shrink-0"
+                          className="w-full sm:w-auto px-7 py-3 bg-[#FF6F1E] hover:bg-[#F45B0A] text-white font-bold text-sm rounded-xl shadow transition cursor-pointer flex items-center justify-center gap-2 shrink-0"
                         >
                           <span>Subscribe</span>
                           <Send className="w-4 h-4" />

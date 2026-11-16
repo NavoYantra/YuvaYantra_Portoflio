@@ -60,15 +60,15 @@ export default function GalleryPage() {
 
         <main className="flex-1">
           {/* Header Banner */}
-          <section className="bg-[#0B1E38] text-white py-16 sm:py-20 px-4 sm:px-8 relative overflow-hidden">
+          <section className="bg-[#102A4E] text-white py-16 sm:py-20 px-4 sm:px-8 relative overflow-hidden">
             <div className="max-w-7xl mx-auto space-y-4">
               <div className="text-xs font-semibold text-slate-400">
                 <Link href="/" className="hover:text-white transition">
                   Home
                 </Link>{" "}
-                / <span className="text-[#FF7043]">Gallery</span>
+                / <span className="text-[#FF8742]">Gallery</span>
               </div>
-              <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722] block">
+              <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E] block">
                 GALLERY
               </span>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white max-w-3xl leading-tight">
@@ -92,7 +92,7 @@ export default function GalleryPage() {
                     onClick={() => setActiveCategory(cat)}
                     className={`px-5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition cursor-pointer ${
                       activeCategory === cat
-                        ? "bg-[#0B2545] text-white shadow"
+                        ? "bg-[#153A6B] text-white shadow"
                         : "bg-slate-100 text-slate-700 hover:bg-slate-200"
                     }`}
                   >
@@ -106,7 +106,7 @@ export default function GalleryPage() {
                 {filteredItems.map((item) => (
                   <div
                     key={item.id}
-                    className="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-xl hover:border-[#FF5722]/50 transition-all duration-200 flex flex-col justify-between"
+                    className="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm hover:shadow-xl hover:border-[#FF6F1E]/50 transition-all duration-200 flex flex-col justify-between"
                   >
                     {/* Visual Photo Card */}
                     <div className="relative w-full h-56 rounded-2xl overflow-hidden border border-slate-200 bg-slate-100 group-hover:shadow-md transition">
@@ -119,10 +119,10 @@ export default function GalleryPage() {
                     </div>
 
                     <div className="mt-5 space-y-1">
-                      <span className="text-[10px] font-bold tracking-wider uppercase text-[#FF5722]">
+                      <span className="text-[10px] font-bold tracking-wider uppercase text-[#FF6F1E]">
                         {item.category.toUpperCase()}
                       </span>
-                      <h3 className="text-base font-bold text-[#0B2545]">
+                      <h3 className="text-base font-bold text-[#153A6B]">
                         {item.title}
                       </h3>
                       <p className="text-xs text-slate-500">{item.caption}</p>
@@ -135,7 +135,7 @@ export default function GalleryPage() {
               <div className="text-center pt-6">
                 <button
                   type="button"
-                  className="px-8 py-3.5 border-2 border-slate-300 hover:border-[#0B2545] text-[#0B2545] font-bold text-sm rounded-xl transition cursor-pointer"
+                  className="px-8 py-3.5 border-2 border-slate-300 hover:border-[#153A6B] text-[#153A6B] font-bold text-sm rounded-xl transition cursor-pointer"
                 >
                   Load More Photos
                 </button>
@@ -148,10 +148,10 @@ export default function GalleryPage() {
             <div className="max-w-7xl mx-auto space-y-12">
               <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6">
                 <div className="space-y-2">
-                  <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722]">
+                  <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E]">
                     VIDEOS
                   </span>
-                  <h2 className="text-3xl sm:text-4xl font-black text-[#0B2545] tracking-tight">
+                  <h2 className="text-3xl sm:text-4xl font-black text-[#153A6B] tracking-tight">
                     Watch us build
                   </h2>
                 </div>
@@ -161,9 +161,9 @@ export default function GalleryPage() {
                     href="https://youtube.com"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-white border border-slate-300 hover:border-[#FF5722] text-[#0B2545] font-bold text-sm rounded-xl shadow-sm transition"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-white border border-slate-300 hover:border-[#FF6F1E] text-[#153A6B] font-bold text-sm rounded-xl shadow-sm transition"
                   >
-                    <YoutubeIcon className="w-4 h-4 text-[#FF5722]" />
+                    <YoutubeIcon className="w-4 h-4 text-[#FF6F1E]" />
                     <span>Our YouTube Channel</span>
                     <ExternalLink className="w-3.5 h-3.5 text-slate-400" />
                   </a>
@@ -180,7 +180,7 @@ export default function GalleryPage() {
                     {/* Video Visual Box with Play Button */}
                     <div className="relative w-full h-48 rounded-2xl border-2 border-dashed border-slate-200 bg-slate-100 flex flex-col items-center justify-center p-6 text-center overflow-hidden">
                       {/* Orange Play circle */}
-                      <div className="w-14 h-14 rounded-full bg-[#FF5722] text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-200 cursor-pointer">
+                      <div className="w-14 h-14 rounded-full bg-[#FF6F1E] text-white flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-200 cursor-pointer">
                         <Play className="w-6 h-6 ml-1 fill-white" />
                       </div>
                       <span className="absolute bottom-3 left-4 text-[10px] font-mono font-semibold text-slate-500 bg-white/80 px-2 py-0.5 rounded">
@@ -189,7 +189,7 @@ export default function GalleryPage() {
                     </div>
 
                     <div className="mt-5 space-y-1">
-                      <h3 className="text-base font-bold text-[#0B2545] group-hover:text-[#FF5722] transition-colors">
+                      <h3 className="text-base font-bold text-[#153A6B] group-hover:text-[#FF6F1E] transition-colors">
                         {vid.title}
                       </h3>
                       <p className="text-xs text-slate-500 leading-relaxed">

@@ -16,10 +16,10 @@ export const HowWeWork: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         {/* Title */}
         <div className="text-center space-y-2 mb-16">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722]">
+          <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E]">
             HOW WE WORK
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#0B2545] tracking-tight">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-[#153A6B] tracking-tight">
             Seven steps to a working lab
           </h2>
         </div>
@@ -35,13 +35,13 @@ export const HowWeWork: React.FC = () => {
                 <div
                   className={`w-12 h-12 rounded-full flex items-center justify-center font-bold text-sm shadow-md transition-transform duration-200 group-hover:scale-110 ${
                     step.color === "orange"
-                      ? "bg-[#FF5722] text-white"
-                      : "bg-[#0B2545] text-white"
+                      ? "bg-[#FF6F1E] text-white"
+                      : "bg-[#153A6B] text-white"
                   }`}
                 >
                   {step.num}
                 </div>
-                <h3 className="mt-4 text-xs font-bold text-[#0B2545] leading-snug px-1">
+                <h3 className="mt-4 text-xs font-bold text-[#153A6B] leading-snug px-1">
                   {step.title}
                 </h3>
               </div>
@@ -59,13 +59,13 @@ export const HowWeWork: React.FC = () => {
               <div
                 className={`w-11 h-11 rounded-full flex items-center justify-center font-bold text-sm shrink-0 shadow-sm ${
                   step.color === "orange"
-                    ? "bg-[#FF5722] text-white"
-                    : "bg-[#0B2545] text-white"
+                    ? "bg-[#FF6F1E] text-white"
+                    : "bg-[#153A6B] text-white"
                 }`}
               >
                 {step.num}
               </div>
-              <h3 className="text-sm font-bold text-[#0B2545]">
+              <h3 className="text-sm font-bold text-[#153A6B]">
                 {step.title}
               </h3>
             </div>

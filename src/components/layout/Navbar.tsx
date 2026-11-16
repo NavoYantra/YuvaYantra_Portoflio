@@ -50,7 +50,7 @@ export const Navbar: React.FC = () => {
     <>
       <header className="w-full sticky top-0 z-40 bg-white">
         {/* Top Notification / Contact Bar (Exact Design) */}
-        <div className="bg-[#0B1E38] text-white text-xs py-2 px-4 sm:px-8 border-b border-white/10">
+        <div className="bg-[#102A4E] text-white text-xs py-2 px-4 sm:px-8 border-b border-white/10">
           <div className="max-w-7xl mx-auto flex items-center justify-between">
             {/* Desktop contact info */}
             <div className="hidden sm:flex items-center gap-6 text-slate-300">
@@ -58,14 +58,14 @@ export const Navbar: React.FC = () => {
                 href={`tel:${COMPANY_INFO.phone1.replace(/\s+/g, "")}`}
                 className="flex items-center gap-1.5 hover:text-white transition-colors"
               >
-                <Phone className="w-3.5 h-3.5 text-[#FF5722]" />
+                <Phone className="w-3.5 h-3.5 text-[#FF6F1E]" />
                 <span>{COMPANY_INFO.phone1}</span>
               </a>
               <a
                 href={`mailto:${COMPANY_INFO.emailOfficial}`}
                 className="flex items-center gap-1.5 hover:text-white transition-colors"
               >
-                <Mail className="w-3.5 h-3.5 text-[#FF5722]" />
+                <Mail className="w-3.5 h-3.5 text-[#FF6F1E]" />
                 <span>{COMPANY_INFO.emailOfficial}</span>
               </a>
             </div>
@@ -76,7 +76,7 @@ export const Navbar: React.FC = () => {
                 href={`tel:${COMPANY_INFO.phone1.replace(/\s+/g, "")}`}
                 className="flex items-center gap-1 hover:text-white"
               >
-                <Phone className="w-3 h-3 text-[#FF5722]" />
+                <Phone className="w-3 h-3 text-[#FF6F1E]" />
                 <span>{COMPANY_INFO.phone1}</span>
               </a>
             </div>
@@ -88,7 +88,7 @@ export const Navbar: React.FC = () => {
                 download="YuvaYantra-Catalog.pdf"
                 className="hidden md:inline-flex items-center gap-1.5 text-slate-200 hover:text-white transition-colors text-[11px] font-medium bg-white/10 px-2.5 py-0.5 rounded-full border border-white/10"
               >
-                <FileText className="w-3 h-3 text-[#FF7043]" />
+                <FileText className="w-3 h-3 text-[#FF8742]" />
                 <span>Catalog (PDF)</span>
               </a>
               <a
@@ -97,7 +97,7 @@ export const Navbar: React.FC = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-1.5 font-medium text-slate-200 hover:text-orange-400 transition-colors"
               >
-                <ShoppingCart className="w-3.5 h-3.5 text-[#FF5722]" />
+                <ShoppingCart className="w-3.5 h-3.5 text-[#FF6F1E]" />
                 <span className="hidden sm:inline">Shop STEM Kits:</span>
                 <span className="font-semibold text-white underline underline-offset-2">
                   shop.navoyantra.com
@@ -128,13 +128,13 @@ export const Navbar: React.FC = () => {
                     href={link.href}
                     className={`relative text-sm font-semibold transition-colors duration-150 py-1 ${
                       isActive
-                        ? "text-[#0B2545] font-bold"
-                        : "text-slate-600 hover:text-[#0B2545]"
+                        ? "text-[#153A6B] font-bold"
+                        : "text-slate-600 hover:text-[#153A6B]"
                     }`}
                   >
                     {link.label}
                     {isActive && (
-                      <span className="absolute bottom-0 left-0 right-0 h-[2.5px] bg-[#FF5722] rounded-full" />
+                      <span className="absolute bottom-0 left-0 right-0 h-[2.5px] bg-[#FF6F1E] rounded-full" />
                     )}
                   </Link>
                 );
@@ -145,7 +145,7 @@ export const Navbar: React.FC = () => {
             <div className="hidden lg:flex items-center gap-3">
               <button
                 onClick={() => setIsQuoteModalOpen(true)}
-                className="px-5 py-2.5 bg-[#FF5722] hover:bg-[#E64A19] text-white text-sm font-bold rounded-lg shadow-sm hover:shadow transition-all duration-150 cursor-pointer"
+                className="px-5 py-2.5 bg-[#FF6F1E] hover:bg-[#F45B0A] text-white text-sm font-bold rounded-lg shadow-sm hover:shadow transition-all duration-150 cursor-pointer"
               >
                 Get a Quote
               </button>
@@ -155,13 +155,13 @@ export const Navbar: React.FC = () => {
             <div className="flex lg:hidden items-center gap-3">
               <button
                 onClick={() => setIsQuoteModalOpen(true)}
-                className="px-3 py-1.5 bg-[#FF5722] text-white text-xs font-bold rounded-md shadow-sm"
+                className="px-3 py-1.5 bg-[#FF6F1E] text-white text-xs font-bold rounded-md shadow-sm"
               >
                 Quote
               </button>
               <button
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                className="p-2 text-slate-700 hover:text-[#0B2545] focus:outline-none"
+                className="p-2 text-slate-700 hover:text-[#153A6B] focus:outline-none"
                 aria-label="Toggle navigation menu"
               >
                 {isMobileMenuOpen ? (
@@ -186,12 +186,12 @@ export const Navbar: React.FC = () => {
                     href={link.href}
                     className={`text-base font-semibold py-2 px-3 rounded-lg flex items-center justify-between ${
                       isActive
-                        ? "bg-orange-50 text-[#FF5722] font-bold"
+                        ? "bg-orange-50 text-[#FF6F1E] font-bold"
                         : "text-slate-700 hover:bg-slate-50"
                     }`}
                   >
                     <span>{link.label}</span>
-                    {isActive && <ArrowRight className="w-4 h-4 text-[#FF5722]" />}
+                    {isActive && <ArrowRight className="w-4 h-4 text-[#FF6F1E]" />}
                   </Link>
                 );
               })}
@@ -203,7 +203,7 @@ export const Navbar: React.FC = () => {
                   setIsMobileMenuOpen(false);
                   setIsQuoteModalOpen(true);
                 }}
-                className="w-full py-3 bg-[#FF5722] hover:bg-[#E64A19] text-white font-bold text-center rounded-xl shadow cursor-pointer"
+                className="w-full py-3 bg-[#FF6F1E] hover:bg-[#F45B0A] text-white font-bold text-center rounded-xl shadow cursor-pointer"
               >
                 Get a Quote
               </button>
@@ -212,9 +212,9 @@ export const Navbar: React.FC = () => {
                 href={COMPANY_INFO.shopUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full py-2.5 bg-[#0B1E38] text-white font-semibold text-center rounded-xl flex items-center justify-center gap-2 text-sm"
+                className="w-full py-2.5 bg-[#102A4E] text-white font-semibold text-center rounded-xl flex items-center justify-center gap-2 text-sm"
               >
-                <ShoppingCart className="w-4 h-4 text-[#FF5722]" />
+                <ShoppingCart className="w-4 h-4 text-[#FF6F1E]" />
                 <span>Shop on NavoYantra</span>
               </a>
 

@@ -19,7 +19,7 @@ export const CtaBanner: React.FC<{
     <>
       <section className="w-full py-8 px-4 sm:px-8 bg-slate-50">
         <div className="max-w-7xl mx-auto">
-          <div className="relative overflow-hidden rounded-3xl bg-[#FF5722] text-white p-8 sm:p-12 lg:p-14 shadow-xl">
+          <div className="relative overflow-hidden rounded-3xl bg-[#FF6F1E] text-white p-8 sm:p-12 lg:p-14 shadow-xl">
             {/* Geometric watermark / backdrop accent */}
             <div className="absolute right-0 bottom-0 top-0 w-1/2 pointer-events-none opacity-15 overflow-hidden">
               <svg
@@ -46,7 +46,7 @@ export const CtaBanner: React.FC<{
               <div className="shrink-0">
                 <button
                   onClick={() => setIsOpen(true)}
-                  className="px-7 py-3.5 bg-[#0B1E38] hover:bg-[#071527] text-white font-bold rounded-xl text-base shadow-lg hover:shadow-xl transition-all duration-150 flex items-center gap-2.5 cursor-pointer group"
+                  className="px-7 py-3.5 bg-[#102A4E] hover:bg-[#0D203C] text-white font-bold rounded-xl text-base shadow-lg hover:shadow-xl transition-all duration-150 flex items-center gap-2.5 cursor-pointer group"
                 >
                   <span>{buttonText}</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

@@ -19,15 +19,15 @@ export default function TermsAndConditionsPage() {
 
         <main className="flex-1">
           {/* Header Banner */}
-          <section className="bg-[#0B1E38] text-white py-14 sm:py-18 px-4 sm:px-8 relative overflow-hidden">
+          <section className="bg-[#102A4E] text-white py-14 sm:py-18 px-4 sm:px-8 relative overflow-hidden">
             <div className="max-w-5xl mx-auto space-y-4">
               <div className="text-xs font-semibold text-slate-400">
                 <Link href="/" className="hover:text-white transition">
                   Home
                 </Link>{" "}
-                / <span className="text-[#FF7043]">Legal</span> / <span>Terms &amp; Conditions</span>
+                / <span className="text-[#FF8742]">Legal</span> / <span>Terms &amp; Conditions</span>
               </div>
-              <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722] block">
+              <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E] block">
                 LEGAL AGREEMENT &amp; USER TERMS
               </span>
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black tracking-tight text-white leading-tight">
@@ -49,7 +49,7 @@ export default function TermsAndConditionsPage() {
               
               {/* Introduction Box */}
               <div className="p-6 rounded-2xl bg-slate-50 border border-slate-200 space-y-3">
-                <h2 className="text-lg font-bold text-[#0B2545]">
+                <h2 className="text-lg font-bold text-[#153A6B]">
                   1. Acceptance of Terms &amp; Company Disclosures
                 </h2>
                 <p>
@@ -62,7 +62,7 @@ export default function TermsAndConditionsPage() {
 
               {/* 2. Products, Kits and Lab Solutions */}
               <div className="space-y-4 border-b border-slate-100 pb-8">
-                <h3 className="text-xl font-black text-[#0B2545]">
+                <h3 className="text-xl font-black text-[#153A6B]">
                   2. Supply of Educational Kits &amp; Lab Infrastructure
                 </h3>
                 <p>
@@ -77,7 +77,7 @@ export default function TermsAndConditionsPage() {
 
               {/* 3. Intellectual Property Rights */}
               <div className="space-y-4 border-b border-slate-100 pb-8">
-                <h3 className="text-xl font-black text-[#0B2545]">
+                <h3 className="text-xl font-black text-[#153A6B]">
                   3. Proprietary Rights &amp; Trademark Protection
                 </h3>
                 <p>
@@ -90,7 +90,7 @@ export default function TermsAndConditionsPage() {
 
               {/* 4. Pricing, Invoicing & Taxes */}
               <div className="space-y-4 border-b border-slate-100 pb-8">
-                <h3 className="text-xl font-black text-[#0B2545]">
+                <h3 className="text-xl font-black text-[#153A6B]">
                   4. Commercial Terms, GST &amp; Invoicing
                 </h3>
                 <ul className="list-disc list-inside space-y-2 text-xs sm:text-sm text-slate-700">
@@ -102,7 +102,7 @@ export default function TermsAndConditionsPage() {
 
               {/* 5. Warranty & Maintenance (AMC) */}
               <div className="space-y-4 border-b border-slate-100 pb-8">
-                <h3 className="text-xl font-black text-[#0B2545]">
+                <h3 className="text-xl font-black text-[#153A6B]">
                   5. Warranty, Repairs &amp; Annual Maintenance Contract (AMC)
                 </h3>
                 <p>
@@ -117,7 +117,7 @@ export default function TermsAndConditionsPage() {
 
               {/* 6. Limitation of Liability */}
               <div className="space-y-4 border-b border-slate-100 pb-8">
-                <h3 className="text-xl font-black text-[#0B2545]">
+                <h3 className="text-xl font-black text-[#153A6B]">
                   6. Limitation of Liability &amp; Force Majeure
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600">
@@ -127,7 +127,7 @@ export default function TermsAndConditionsPage() {
 
               {/* 7. Governing Law & Dispute Resolution */}
               <div className="space-y-4 rounded-2xl bg-slate-50 border border-slate-200 p-6 sm:p-8">
-                <h3 className="text-lg sm:text-xl font-bold text-[#0B2545]">
+                <h3 className="text-lg sm:text-xl font-bold text-[#153A6B]">
                   7. Governing Law &amp; Exclusive Jurisdiction
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-700 leading-relaxed">
@@ -135,7 +135,7 @@ export default function TermsAndConditionsPage() {
                 </p>
                 <div className="pt-2 text-xs text-slate-500">
                   For legal inquiries or statutory questions, please contact:{" "}
-                  <a href={`mailto:${COMPANY_INFO.emailOfficial}`} className="text-[#FF5722] font-semibold underline">
+                  <a href={`mailto:${COMPANY_INFO.emailOfficial}`} className="text-[#FF6F1E] font-semibold underline">
                     {COMPANY_INFO.emailOfficial}
                   </a>
                 </div>

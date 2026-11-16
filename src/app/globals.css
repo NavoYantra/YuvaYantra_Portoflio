@@ -1,12 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --navy-900: #0B1E38;
-  --navy-950: #071527;
-  --navy-800: #14325C;
-  --orange-500: #FF5722;
-  --orange-600: #E64A19;
-  --orange-50: #FFF5F0;
+  --navy-900: #102A4E;
+  --navy-950: #0D203C;
+  --navy-800: #1A437C;
+  --orange-500: #FF6F1E;
+  --orange-600: #F45B0A;
+  --orange-50: #FFF8F5;
 }
 
 * {
@@ -49,12 +49,12 @@ html.lenis, html.lenis body {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #0B1E38;
+  background: #102A4E;
 }
 ::-webkit-scrollbar-thumb {
-  background: #FF5722;
+  background: #FF6F1E;
   border-radius: 4px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #E64A19;
+  background: #F45B0A;
 }

@@ -47,15 +47,15 @@ export default function ContactPage() {
 
         <main className="flex-1">
           {/* Header Banner */}
-          <section className="bg-[#0B1E38] text-white py-16 sm:py-20 px-4 sm:px-8 relative overflow-hidden">
+          <section className="bg-[#102A4E] text-white py-16 sm:py-20 px-4 sm:px-8 relative overflow-hidden">
             <div className="max-w-7xl mx-auto space-y-4">
               <div className="text-xs font-semibold text-slate-400">
                 <Link href="/" className="hover:text-white transition">
                   Home
                 </Link>{" "}
-                / <span className="text-[#FF7043]">Contact</span>
+                / <span className="text-[#FF8742]">Contact</span>
               </div>
-              <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722] block">
+              <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E] block">
                 CONTACT
               </span>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white max-w-3xl leading-tight">
@@ -75,7 +75,7 @@ export default function ContactPage() {
               {/* Left Column: Form */}
               <div className="lg:col-span-7 rounded-3xl border border-slate-200 bg-white p-8 sm:p-10 shadow-sm space-y-6">
                 <div>
-                  <h2 className="text-2xl font-bold text-[#0B2545]">
+                  <h2 className="text-2xl font-bold text-[#153A6B]">
                     Send us an enquiry
                   </h2>
                   <p className="text-xs sm:text-sm text-slate-500 mt-1">
@@ -97,7 +97,7 @@ export default function ContactPage() {
                         onChange={(e) =>
                           setFormData({ ...formData, fullName: e.target.value })
                         }
-                        className="w-full px-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF5722]"
+                        className="w-full px-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF6F1E]"
                       />
                     </div>
                     <div>
@@ -112,7 +112,7 @@ export default function ContactPage() {
                         onChange={(e) =>
                           setFormData({ ...formData, orgName: e.target.value })
                         }
-                        className="w-full px-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF5722]"
+                        className="w-full px-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF6F1E]"
                       />
                     </div>
                   </div>
@@ -130,7 +130,7 @@ export default function ContactPage() {
                         onChange={(e) =>
                           setFormData({ ...formData, email: e.target.value })
                         }
-                        className="w-full px-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF5722]"
+                        className="w-full px-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF6F1E]"
                       />
                     </div>
                     <div>
@@ -145,7 +145,7 @@ export default function ContactPage() {
                         onChange={(e) =>
                           setFormData({ ...formData, phone: e.target.value })
                         }
-                        className="w-full px-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF5722]"
+                        className="w-full px-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF6F1E]"
                       />
                     </div>
                   </div>
@@ -162,7 +162,7 @@ export default function ContactPage() {
                           interestedIn: e.target.value,
                         })
                       }
-                      className="w-full px-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF5722] bg-white text-slate-800"
+                      className="w-full px-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF6F1E] bg-white text-slate-800"
                     >
                       <option value="Lab setup (STEM / Robotics / AI / IoT / ATL)">
                         Lab setup (STEM / Robotics / AI / IoT / ATL)
@@ -196,7 +196,7 @@ export default function ContactPage() {
                       onChange={(e) =>
                         setFormData({ ...formData, message: e.target.value })
                       }
-                      className="w-full px-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF5722] resize-none"
+                      className="w-full px-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF6F1E] resize-none"
                     />
                   </div>
 
@@ -204,7 +204,7 @@ export default function ContactPage() {
                     <button
                       type="submit"
                       disabled={isSubmitting}
-                      className="px-7 py-3 bg-[#FF5722] hover:bg-[#E64A19] text-white font-bold text-sm rounded-xl shadow-md transition cursor-pointer flex items-center gap-2 disabled:opacity-70"
+                      className="px-7 py-3 bg-[#FF6F1E] hover:bg-[#F45B0A] text-white font-bold text-sm rounded-xl shadow-md transition cursor-pointer flex items-center gap-2 disabled:opacity-70"
                     >
                       {isSubmitting ? (
                         <span>Sending...</span>
@@ -223,14 +223,14 @@ export default function ContactPage() {
               <div className="lg:col-span-5 space-y-4">
                 {/* Office */}
                 <div className="p-6 rounded-2xl border border-slate-200 bg-white shadow-sm flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#FFF5F0] text-[#FF5722] flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="w-10 h-10 rounded-xl bg-[#FFF8F5] text-[#FF6F1E] flex items-center justify-center shrink-0 mt-0.5">
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
                     <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400">
                       OFFICE
                     </span>
-                    <p className="text-xs sm:text-sm font-semibold text-[#0B2545] leading-relaxed mt-0.5">
+                    <p className="text-xs sm:text-sm font-semibold text-[#153A6B] leading-relaxed mt-0.5">
                       {COMPANY_INFO.address}
                     </p>
                   </div>
@@ -238,14 +238,14 @@ export default function ContactPage() {
 
                 {/* Call / WhatsApp */}
                 <div className="p-6 rounded-2xl border border-slate-200 bg-white shadow-sm flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#FFF5F0] text-[#FF5722] flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="w-10 h-10 rounded-xl bg-[#FFF8F5] text-[#FF6F1E] flex items-center justify-center shrink-0 mt-0.5">
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
                     <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400">
                       CALL / WHATSAPP
                     </span>
-                    <div className="text-xs sm:text-sm font-semibold text-[#0B2545] mt-0.5 space-y-0.5">
+                    <div className="text-xs sm:text-sm font-semibold text-[#153A6B] mt-0.5 space-y-0.5">
                       <p>
                         <a href={`tel:${COMPANY_INFO.phone1.replace(/\s+/g, "")}`}>
                           {COMPANY_INFO.phone1}
@@ -262,14 +262,14 @@ export default function ContactPage() {
 
                 {/* Email */}
                 <div className="p-6 rounded-2xl border border-slate-200 bg-white shadow-sm flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#FFF5F0] text-[#FF5722] flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="w-10 h-10 rounded-xl bg-[#FFF8F5] text-[#FF6F1E] flex items-center justify-center shrink-0 mt-0.5">
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
                     <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400">
                       EMAIL
                     </span>
-                    <div className="text-xs sm:text-sm font-semibold text-[#0B2545] mt-0.5 space-y-0.5">
+                    <div className="text-xs sm:text-sm font-semibold text-[#153A6B] mt-0.5 space-y-0.5">
                       <p>
                         <a href={`mailto:${COMPANY_INFO.emailOfficial}`}>
                           {COMPANY_INFO.emailOfficial}
@@ -286,14 +286,14 @@ export default function ContactPage() {
 
                 {/* Online Store */}
                 <div className="p-6 rounded-2xl border border-slate-200 bg-white shadow-sm flex items-start gap-4">
-                  <div className="w-10 h-10 rounded-xl bg-[#FFF5F0] text-[#FF5722] flex items-center justify-center shrink-0 mt-0.5">
+                  <div className="w-10 h-10 rounded-xl bg-[#FFF8F5] text-[#FF6F1E] flex items-center justify-center shrink-0 mt-0.5">
                     <ShoppingCart className="w-5 h-5" />
                   </div>
                   <div>
                     <span className="text-[10px] font-bold uppercase tracking-widest text-slate-400">
                       ONLINE STORE
                     </span>
-                    <p className="text-xs sm:text-sm font-semibold text-[#FF5722] mt-0.5">
+                    <p className="text-xs sm:text-sm font-semibold text-[#FF6F1E] mt-0.5">
                       <a
                         href={COMPANY_INFO.shopUrl}
                         target="_blank"
@@ -314,8 +314,8 @@ export default function ContactPage() {
           <section className="px-4 sm:px-8 pb-16">
             <div className="max-w-7xl mx-auto rounded-3xl border border-slate-200 bg-slate-50 overflow-hidden shadow-sm">
               <div className="p-4 bg-white border-b border-slate-200 flex items-center justify-between text-xs text-slate-600">
-                <span className="font-semibold text-[#0B2545] flex items-center gap-1.5">
-                  <MapPin className="w-4 h-4 text-[#FF5722]" />
+                <span className="font-semibold text-[#153A6B] flex items-center gap-1.5">
+                  <MapPin className="w-4 h-4 text-[#FF6F1E]" />
                   <span>Google Map Embed: Naveen Shahdara, Delhi Office</span>
                 </span>
                 <a
@@ -324,7 +324,7 @@ export default function ContactPage() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#FF5722] hover:underline flex items-center gap-1 font-semibold"
+                  className="text-[#FF6F1E] hover:underline flex items-center gap-1 font-semibold"
                 >
                   <span>Open in Google Maps</span>
                   <ExternalLink className="w-3 h-3" />
@@ -351,10 +351,10 @@ export default function ContactPage() {
           <section className="py-20 px-4 sm:px-8 bg-slate-50 border-t border-slate-100">
             <div className="max-w-4xl mx-auto space-y-8">
               <div className="text-center space-y-2">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722]">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E]">
                   FAQ
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-black text-[#0B2545] tracking-tight">
+                <h2 className="text-3xl sm:text-4xl font-black text-[#153A6B] tracking-tight">
                   Common questions
                 </h2>
               </div>
@@ -371,12 +371,12 @@ export default function ContactPage() {
                         onClick={() => setOpenFaq(isOpen ? null : idx)}
                         className="w-full p-5 text-left flex items-center justify-between gap-4 cursor-pointer"
                       >
-                        <span className="text-sm sm:text-base font-bold text-[#0B2545]">
+                        <span className="text-sm sm:text-base font-bold text-[#153A6B]">
                           {faq.q}
                         </span>
                         <ChevronDown
                           className={`w-4 h-4 text-slate-400 shrink-0 transition-transform duration-200 ${
-                            isOpen ? "rotate-180 text-[#FF5722]" : ""
+                            isOpen ? "rotate-180 text-[#FF6F1E]" : ""
                           }`}
                         />
                       </button>

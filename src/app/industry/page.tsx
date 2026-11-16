@@ -133,15 +133,15 @@ export default function IndustryPage() {
 
         <main className="flex-1">
           {/* Header Banner */}
-          <section className="bg-[#0B1E38] text-white py-16 sm:py-20 px-4 sm:px-8 relative overflow-hidden">
+          <section className="bg-[#102A4E] text-white py-16 sm:py-20 px-4 sm:px-8 relative overflow-hidden">
             <div className="max-w-7xl mx-auto space-y-4">
               <div className="text-xs font-semibold text-slate-400">
                 <Link href="/" className="hover:text-white transition">
                   Home
                 </Link>{" "}
-                / <span className="text-[#FF7043]">Industry</span>
+                / <span className="text-[#FF8742]">Industry</span>
               </div>
-              <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722] block">
+              <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E] block">
                 INDUSTRY
               </span>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white max-w-3xl leading-tight">
@@ -159,10 +159,10 @@ export default function IndustryPage() {
           <section className="py-20 px-4 sm:px-8 bg-white">
             <div className="max-w-7xl mx-auto space-y-16">
               <div className="space-y-2">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722]">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E]">
                   WHAT WE OFFER
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-black text-[#0B2545] tracking-tight">
+                <h2 className="text-3xl sm:text-4xl font-black text-[#153A6B] tracking-tight">
                   Five ways we help industry
                 </h2>
               </div>
@@ -176,7 +176,7 @@ export default function IndustryPage() {
                     <div
                       key={item.id}
                       id={item.id}
-                      className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-8 sm:p-10 rounded-3xl border border-slate-200/90 bg-white hover:border-[#FF5722]/50 hover:shadow-md transition-all duration-200"
+                      className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center p-8 sm:p-10 rounded-3xl border border-slate-200/90 bg-white hover:border-[#FF6F1E]/50 hover:shadow-md transition-all duration-200"
                     >
                       {/* Text Column */}
                       <div
@@ -184,12 +184,12 @@ export default function IndustryPage() {
                           isEven ? "lg:col-span-7 lg:order-2" : "lg:col-span-7"
                         }`}
                       >
-                        <div className="w-12 h-12 rounded-xl bg-[#FFF5F0] border border-[#FFE8DC] flex items-center justify-center text-[#FF5722]">
+                        <div className="w-12 h-12 rounded-xl bg-[#FFF8F5] border border-[#FFEFE6] flex items-center justify-center text-[#FF6F1E]">
                           <Icon className="w-6 h-6" />
                         </div>
 
                         <div>
-                          <h3 className="text-2xl font-bold text-[#0B2545]">
+                          <h3 className="text-2xl font-bold text-[#153A6B]">
                             {item.title}
                           </h3>
                           <p className="text-sm text-slate-600 mt-1">
@@ -203,7 +203,7 @@ export default function IndustryPage() {
                               key={fIdx}
                               className="flex items-start gap-2 text-xs sm:text-sm font-medium text-slate-700"
                             >
-                              <Check className="w-4 h-4 text-[#FF5722] shrink-0 mt-0.5" />
+                              <Check className="w-4 h-4 text-[#FF6F1E] shrink-0 mt-0.5" />
                               <span>{feat}</span>
                             </div>
                           ))}
@@ -225,7 +225,7 @@ export default function IndustryPage() {
                               className="object-cover group-hover:scale-105 transition-transform duration-500"
                               sizes="(max-width: 1024px) 100vw, 40vw"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-[#0B2545]/80 via-transparent to-transparent flex items-end p-4">
+                            <div className="absolute inset-0 bg-gradient-to-t from-[#153A6B]/80 via-transparent to-transparent flex items-end p-4">
                               <p className="text-white text-xs font-semibold drop-shadow">
                                 {item.title}
                               </p>
@@ -251,10 +251,10 @@ export default function IndustryPage() {
           <section className="py-20 px-4 sm:px-8 bg-slate-50 border-t border-b border-slate-100">
             <div className="max-w-7xl mx-auto space-y-14">
               <div className="text-center space-y-2">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722]">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E]">
                   HOW WE WORK
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-black text-[#0B2545] tracking-tight">
+                <h2 className="text-3xl sm:text-4xl font-black text-[#153A6B] tracking-tight">
                   From problem to production
                 </h2>
               </div>
@@ -266,10 +266,10 @@ export default function IndustryPage() {
                     className="p-6 rounded-2xl border border-slate-200 bg-white shadow-sm flex flex-col justify-between"
                   >
                     <div>
-                      <span className="text-xl font-black font-mono text-[#FF5722] block mb-3">
+                      <span className="text-xl font-black font-mono text-[#FF6F1E] block mb-3">
                         {step.num}
                       </span>
-                      <h3 className="text-base font-bold text-[#0B2545] mb-2">
+                      <h3 className="text-base font-bold text-[#153A6B] mb-2">
                         {step.title}
                       </h3>
                       <p className="text-xs text-slate-600 leading-relaxed">
@@ -288,10 +288,10 @@ export default function IndustryPage() {
               {/* Left: Who We Work With */}
               <div className="lg:col-span-6 space-y-6 flex flex-col justify-between p-8 rounded-3xl border border-slate-200">
                 <div className="space-y-4">
-                  <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722]">
+                  <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E]">
                     INDUSTRIES WE SERVE
                   </span>
-                  <h3 className="text-2xl sm:text-3xl font-black text-[#0B2545]">
+                  <h3 className="text-2xl sm:text-3xl font-black text-[#153A6B]">
                     Who we work with
                   </h3>
                   <p className="text-sm text-slate-600">
@@ -313,9 +313,9 @@ export default function IndustryPage() {
               </div>
 
               {/* Right: Track Record Box */}
-              <div className="lg:col-span-6 rounded-3xl bg-[#0B2545] text-white p-8 sm:p-10 shadow-lg flex flex-col justify-between">
+              <div className="lg:col-span-6 rounded-3xl bg-[#153A6B] text-white p-8 sm:p-10 shadow-lg flex flex-col justify-between">
                 <div className="space-y-4">
-                  <span className="text-xs font-bold uppercase tracking-widest text-[#FF7043]">
+                  <span className="text-xs font-bold uppercase tracking-widest text-[#FF8742]">
                     TRACK RECORD
                   </span>
                   <h3 className="text-2xl sm:text-3xl font-extrabold leading-snug">
@@ -331,7 +331,7 @@ export default function IndustryPage() {
                 <div className="pt-8">
                   <Link
                     href="/gallery"
-                    className="inline-flex items-center gap-2 px-6 py-3 bg-[#FF5722] hover:bg-[#E64A19] text-white font-bold text-sm rounded-xl transition"
+                    className="inline-flex items-center gap-2 px-6 py-3 bg-[#FF6F1E] hover:bg-[#F45B0A] text-white font-bold text-sm rounded-xl transition"
                   >
                     <span>View Photo Gallery</span>
                     <ArrowRight className="w-4 h-4" />

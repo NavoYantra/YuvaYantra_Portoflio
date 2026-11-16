@@ -74,15 +74,15 @@ export default function CareersPage() {
 
         <main className="flex-1">
           {/* Header Banner */}
-          <section className="bg-[#0B1E38] text-white py-16 sm:py-20 px-4 sm:px-8 relative overflow-hidden">
+          <section className="bg-[#102A4E] text-white py-16 sm:py-20 px-4 sm:px-8 relative overflow-hidden">
             <div className="max-w-7xl mx-auto space-y-4">
               <div className="text-xs font-semibold text-slate-400">
                 <Link href="/" className="hover:text-white transition">
                   Home
                 </Link>{" "}
-                / <span className="text-[#FF7043]">Careers</span>
+                / <span className="text-[#FF8742]">Careers</span>
               </div>
-              <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722] block">
+              <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E] block">
                 CAREERS
               </span>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white max-w-3xl leading-tight">
@@ -100,10 +100,10 @@ export default function CareersPage() {
           <section className="py-20 px-4 sm:px-8 bg-white">
             <div className="max-w-7xl mx-auto space-y-12">
               <div className="text-center space-y-2">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722]">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E]">
                   WHY JOIN US
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-black text-[#0B2545] tracking-tight">
+                <h2 className="text-3xl sm:text-4xl font-black text-[#153A6B] tracking-tight">
                   Build the future of Indian tech with us
                 </h2>
               </div>
@@ -116,10 +116,10 @@ export default function CareersPage() {
                       key={idx}
                       className="p-7 rounded-2xl border border-slate-200 bg-white shadow-sm flex flex-col justify-start"
                     >
-                      <div className="w-11 h-11 rounded-xl bg-[#FFF5F0] border border-[#FFE8DC] flex items-center justify-center text-[#FF5722] mb-5">
+                      <div className="w-11 h-11 rounded-xl bg-[#FFF8F5] border border-[#FFEFE6] flex items-center justify-center text-[#FF6F1E] mb-5">
                         <Icon className="w-5 h-5" />
                       </div>
-                      <h3 className="text-base font-bold text-[#0B2545] mb-2">
+                      <h3 className="text-base font-bold text-[#153A6B] mb-2">
                         {p.title}
                       </h3>
                       <p className="text-xs text-slate-600 leading-relaxed">
@@ -136,10 +136,10 @@ export default function CareersPage() {
           <section className="py-20 px-4 sm:px-8 bg-slate-50 border-t border-slate-100">
             <div className="max-w-7xl mx-auto space-y-10">
               <div className="space-y-2">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722]">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E]">
                   OPEN POSITIONS
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-black text-[#0B2545] tracking-tight">
+                <h2 className="text-3xl sm:text-4xl font-black text-[#153A6B] tracking-tight">
                   Current openings
                 </h2>
               </div>
@@ -149,16 +149,16 @@ export default function CareersPage() {
                 {CAREER_JOBS.map((job) => (
                   <div
                     key={job.id}
-                    className="p-6 sm:p-7 rounded-2xl border border-slate-200 bg-white hover:border-[#FF5722]/50 hover:shadow-md transition-all duration-150 flex flex-col sm:flex-row sm:items-center justify-between gap-6"
+                    className="p-6 sm:p-7 rounded-2xl border border-slate-200 bg-white hover:border-[#FF6F1E]/50 hover:shadow-md transition-all duration-150 flex flex-col sm:flex-row sm:items-center justify-between gap-6"
                   >
                     <div className="space-y-2">
-                      <h3 className="text-lg font-bold text-[#0B2545]">
+                      <h3 className="text-lg font-bold text-[#153A6B]">
                         {job.title}
                       </h3>
 
                       <div className="flex flex-wrap items-center gap-3 text-xs text-slate-500 font-medium">
                         <span className="flex items-center gap-1">
-                          <Briefcase className="w-3.5 h-3.5 text-[#FF5722]" />
+                          <Briefcase className="w-3.5 h-3.5 text-[#FF6F1E]" />
                           {job.team}
                         </span>
                         <span>•</span>
@@ -177,7 +177,7 @@ export default function CareersPage() {
                     <div>
                       <button
                         onClick={() => handleApplyClick(job.title)}
-                        className="px-6 py-2.5 bg-[#0B2545] hover:bg-[#FF5722] text-white font-bold text-xs rounded-xl transition cursor-pointer"
+                        className="px-6 py-2.5 bg-[#153A6B] hover:bg-[#FF6F1E] text-white font-bold text-xs rounded-xl transition cursor-pointer"
                       >
                         Apply Now
                       </button>
@@ -192,10 +192,10 @@ export default function CareersPage() {
           <section id="apply-form" className="py-20 px-4 sm:px-8 bg-white">
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
               <div className="lg:col-span-5 space-y-4">
-                <span className="text-xs font-bold uppercase tracking-widest text-[#FF5722]">
+                <span className="text-xs font-bold uppercase tracking-widest text-[#FF6F1E]">
                   APPLY
                 </span>
-                <h2 className="text-3xl sm:text-4xl font-black text-[#0B2545] tracking-tight">
+                <h2 className="text-3xl sm:text-4xl font-black text-[#153A6B] tracking-tight">
                   Don’t see your role? <br />
                   Apply anyway
                 </h2>
@@ -212,7 +212,7 @@ export default function CareersPage() {
                     <div className="w-14 h-14 rounded-full bg-emerald-100 text-emerald-600 flex items-center justify-center mx-auto">
                       <CheckCircle className="w-7 h-7" />
                     </div>
-                    <h3 className="text-xl font-bold text-[#0B2545]">
+                    <h3 className="text-xl font-bold text-[#153A6B]">
                       Application Received!
                     </h3>
                     <p className="text-xs sm:text-sm text-slate-600 max-w-sm mx-auto">
@@ -235,7 +235,7 @@ export default function CareersPage() {
                           onChange={(e) =>
                             setFormData({ ...formData, fullName: e.target.value })
                           }
-                          className="w-full px-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF5722]"
+                          className="w-full px-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF6F1E]"
                         />
                       </div>
                       <div>
@@ -250,7 +250,7 @@ export default function CareersPage() {
                           onChange={(e) =>
                             setFormData({ ...formData, email: e.target.value })
                           }
-                          className="w-full px-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF5722]"
+                          className="w-full px-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF6F1E]"
                         />
                       </div>
                     </div>
@@ -268,7 +268,7 @@ export default function CareersPage() {
                           onChange={(e) =>
                             setFormData({ ...formData, phone: e.target.value })
                           }
-                          className="w-full px-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF5722]"
+                          className="w-full px-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF6F1E]"
                         />
                       </div>
                       <div>
@@ -283,7 +283,7 @@ export default function CareersPage() {
                           onChange={(e) =>
                             setFormData({ ...formData, position: e.target.value })
                           }
-                          className="w-full px-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF5722]"
+                          className="w-full px-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF6F1E]"
                         />
                       </div>
                     </div>
@@ -309,14 +309,14 @@ export default function CareersPage() {
                         onChange={(e) =>
                           setFormData({ ...formData, whyJoin: e.target.value })
                         }
-                        className="w-full px-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF5722] resize-none"
+                        className="w-full px-4 py-2.5 text-sm border border-slate-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-[#FF6F1E] resize-none"
                       />
                     </div>
 
                     <div className="pt-2">
                       <button
                         type="submit"
-                        className="px-7 py-3 bg-[#FF5722] hover:bg-[#E64A19] text-white font-bold text-sm rounded-xl shadow-md transition cursor-pointer flex items-center gap-2"
+                        className="px-7 py-3 bg-[#FF6F1E] hover:bg-[#F45B0A] text-white font-bold text-sm rounded-xl shadow-md transition cursor-pointer flex items-center gap-2"
                       >
                         <span>Submit Application</span>
                         <Send className="w-4 h-4" />
